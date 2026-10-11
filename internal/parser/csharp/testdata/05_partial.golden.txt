@@ -1,0 +1,16 @@
+file loc=9 filedoc=""
+sym csharp:Shop kind=namespace name=Shop fqn=Shop
+sym csharp:Shop.Ledger kind=class name=Ledger fqn=Shop.Ledger container=csharp:Shop mods=public,partial sig="public partial class Ledger"
+sym csharp:Shop.Ledger.OnLoaded() kind=method name=OnLoaded fqn=Shop.Ledger.OnLoaded container=csharp:Shop.Ledger mods=partial sig="partial void OnLoaded()"
+sym csharp:Shop.Ledger.Post() kind=method name=Post fqn=Shop.Ledger.Post container=csharp:Shop.Ledger mods=public sig="public void Post()"
+loc csharp:Shop decl 3:11-3:15
+loc csharp:Shop.Ledger partial 10:22-13:1
+loc csharp:Shop.Ledger partial 5:22-8:1
+loc csharp:Shop.Ledger.OnLoaded() partial 7:18-7:28
+loc csharp:Shop.Ledger.Post() decl 12:17-12:26
+# ref: keine
+rel contains csharp:Shop -> csharp:Shop.Ledger
+rel contains csharp:Shop.Ledger -> csharp:Shop.Ledger.OnLoaded()
+rel contains csharp:Shop.Ledger -> csharp:Shop.Ledger.Post()
+# imp: keine
+# diag: keine

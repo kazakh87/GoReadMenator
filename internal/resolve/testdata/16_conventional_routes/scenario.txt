@@ -1,0 +1,2 @@
+SZENARIO: Konventionsrouting und Razor-Seiten. MapControllerRoute mit Muster verbindet öffentliche Aktionen ohne Attributroute. Eine Razor-Seite mit @page ist unter ihrem Pfad erreichbar. Aktionen mit Attributroute folgen nur ihrer Attributroute.
+ABDECKUNG: MapControllerRoute mit benanntem pattern, Platzhalter controller und action, optionaler Parameter id?, Aktion mit Parameter, Controller mit Attributroute ohne Konventionsroute, @page mit Parameter, Aufruf auf Konventionsroute und auf Seite, nicht passender Pfad bleibt offen

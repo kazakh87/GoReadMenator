@@ -1,0 +1,2 @@
+SZENARIO: ASP.NET mit Razor-Ansicht: die Ansicht nutzt ein C#-Modell über @model und einen injizierten Dienst über @inject. Aufrufe über den injizierten Dienst werden über den Feldtyp aufgelöst.
+ABDECKUNG: @model löst den C#-Typ auf, @inject-Feld mit Typ, Aufruf über Feld aus Razor, @code-Methode ruft Dienst auf, Razor-Datei und C#-Dateien in einem Projekt

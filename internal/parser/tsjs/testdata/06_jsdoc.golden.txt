@@ -1,0 +1,7 @@
+file loc=3 filedoc=""
+sym tsjs:src/06_jsdoc.ts#sum(number,number) kind=function name=sum fqn=src/06_jsdoc.ts#sum mods=export sig="export sum(a: number, b: number)" summary="Summiert Werte." remarks="Nur ganze Zahlen, siehe {@link other.run}." returns="Die Summe." param[a]="Erster Wert" param[b]="Zweiter Wert" doc=inline
+loc tsjs:src/06_jsdoc.ts#sum(number,number) decl 11:17-13:1
+ref cref target="other.run" at=3:1-10:1 conf=EXACT in=tsjs:src/06_jsdoc.ts#sum(number,number)
+# rel: keine
+# imp: keine
+# diag: keine

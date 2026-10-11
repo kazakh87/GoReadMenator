@@ -1,0 +1,26 @@
+file loc=11 filedoc=""
+sym csharp:Shop kind=namespace name=Shop fqn=Shop
+sym csharp:Shop.IOrderService kind=interface name=IOrderService fqn=Shop.IOrderService container=csharp:Shop mods=public sig="public interface IOrderService"
+sym csharp:Shop.OrderService kind=class name=OrderService fqn=Shop.OrderService container=csharp:Shop mods=public sig="public class OrderService"
+sym csharp:Shop.OrderService.Id kind=property name=Id fqn=Shop.OrderService.Id container=csharp:Shop.OrderService mods=public
+sym csharp:Shop.Plain kind=class name=Plain fqn=Shop.Plain container=csharp:Shop mods=public sig="public class Plain"
+loc csharp:Shop decl 5:11-5:15
+loc csharp:Shop.IOrderService decl 15:18-15:65
+loc csharp:Shop.OrderService decl 9:14-13:1
+loc csharp:Shop.OrderService.Id decl 12:19-12:34
+loc csharp:Shop.Plain decl 16:14-16:31
+ref attribute target="Obsolete" at=8:2-8:9 conf=HEURISTIC in=csharp:Shop.OrderService
+ref attribute target="Required" at=11:6-11:13 conf=HEURISTIC in=csharp:Shop.OrderService.Id
+ref attribute target="Route" at=8:19-8:23 conf=HEURISTIC in=csharp:Shop.OrderService
+ref attribute target="Serializable" at=7:2-7:13 conf=HEURISTIC in=csharp:Shop.OrderService
+ref implements target="IDisposable" at=9:57-9:67 conf=RESOLVED in=csharp:Shop.OrderService
+ref implements target="IOrderService" at=9:42-9:54 conf=RESOLVED in=csharp:Shop.OrderService
+ref inherits target="BaseService" at=9:29-9:39 conf=HEURISTIC in=csharp:Shop.OrderService
+ref inherits target="IDisposable" at=15:51-15:61 conf=HEURISTIC in=csharp:Shop.IOrderService
+ref inherits target="IHandler" at=15:34-15:48 conf=HEURISTIC in=csharp:Shop.IOrderService arity=1
+rel contains csharp:Shop -> csharp:Shop.IOrderService
+rel contains csharp:Shop -> csharp:Shop.OrderService
+rel contains csharp:Shop -> csharp:Shop.Plain
+rel contains csharp:Shop.OrderService -> csharp:Shop.OrderService.Id
+# imp: keine
+# diag: keine

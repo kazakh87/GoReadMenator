@@ -1,0 +1,24 @@
+# Verwendungen, Beziehungen und Imports (sortiert)
+imp shop.ts esm "./types" -> types.ts
+ref shop.ts:1 import Base -> tsjs:types.ts#Base [EXACT] in 
+ref shop.ts:1 import Money -> tsjs:types.ts#Money [EXACT] in 
+ref shop.ts:1 import Priced -> tsjs:types.ts#Priced [EXACT] in 
+ref shop.ts:3 implements Priced -> tsjs:types.ts#Priced [EXACT] in tsjs:shop.ts#Product
+ref shop.ts:3 inherits Base -> tsjs:types.ts#Base [EXACT] in tsjs:shop.ts#Product
+ref shop.ts:4 type-ref Money -> tsjs:types.ts#Money [EXACT] in tsjs:shop.ts#Product.cost
+ref shop.ts:5 type-ref Money -> tsjs:types.ts#Money [EXACT] in tsjs:shop.ts#Product.price()
+ref shop.ts:6 type-ref Money -> tsjs:types.ts#Money [EXACT] in tsjs:shop.ts#Product.discount(Money)
+ref shop.ts:6 type-ref Money -> tsjs:types.ts#Money [EXACT] in tsjs:shop.ts#Product.discount(Money)
+ref types.ts:2 type-ref Money -> tsjs:types.ts#Money [EXACT] in tsjs:types.ts#Priced.price()
+rel contains tsjs:shop.ts#Product -> tsjs:shop.ts#Product.cost
+rel contains tsjs:shop.ts#Product -> tsjs:shop.ts#Product.discount(Money)
+rel contains tsjs:shop.ts#Product -> tsjs:shop.ts#Product.price()
+rel contains tsjs:types.ts#Money -> tsjs:types.ts#Money.amount
+rel contains tsjs:types.ts#Priced -> tsjs:types.ts#Priced.price()
+rel has_type tsjs:shop.ts#Product.cost -> tsjs:types.ts#Money
+rel implements tsjs:shop.ts#Product -> tsjs:types.ts#Priced
+rel inherits tsjs:shop.ts#Product -> tsjs:types.ts#Base
+rel param_type tsjs:shop.ts#Product.discount(Money) -> tsjs:types.ts#Money
+rel returns tsjs:shop.ts#Product.discount(Money) -> tsjs:types.ts#Money
+rel returns tsjs:shop.ts#Product.price() -> tsjs:types.ts#Money
+rel returns tsjs:types.ts#Priced.price() -> tsjs:types.ts#Money

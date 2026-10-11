@@ -1,0 +1,16 @@
+file loc=11 filedoc=""
+sym vbnet:Shop kind=namespace name=Shop fqn=Shop
+sym vbnet:Shop.Core kind=namespace name=Core fqn=Shop.Core container=vbnet:Shop
+sym vbnet:Shop.Core.Marker kind=class name=Marker fqn=Shop.Core.Marker container=vbnet:Shop.Core mods=public sig="public class Marker"
+sym vbnet:Shop.Empty kind=namespace name=Empty fqn=Shop.Empty
+loc vbnet:Shop decl 7:11-12:13
+loc vbnet:Shop.Core decl 8:15-11:17
+loc vbnet:Shop.Core.Marker decl 9:22-10:17
+loc vbnet:Shop.Empty decl 14:11-15:13
+# ref: keine
+rel contains vbnet:Shop -> vbnet:Shop.Core
+rel contains vbnet:Shop.Core -> vbnet:Shop.Core.Marker
+imp using "Fs=System.IO"
+imp using "System"
+imp using "System.Collections.Generic"
+# diag: keine

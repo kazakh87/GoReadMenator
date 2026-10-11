@@ -1,0 +1,27 @@
+file loc=26 filedoc=""
+sym csharp:Pages kind=namespace name=Pages fqn=Pages
+sym csharp:Pages._02_razor_code_blocks kind=class name=_02_razor_code_blocks fqn=Pages._02_razor_code_blocks container=csharp:Pages mods=partial sig="partial class _02_razor_code_blocks"
+sym csharp:Pages._02_razor_code_blocks.Compute(System.Int32) kind=method name=Compute fqn=Pages._02_razor_code_blocks.Compute container=csharp:Pages._02_razor_code_blocks mods=private sig="private int Compute(int factor)"
+sym csharp:Pages._02_razor_code_blocks.Items kind=field name=Items fqn=Pages._02_razor_code_blocks.Items container=csharp:Pages._02_razor_code_blocks mods=private
+sym csharp:Pages._02_razor_code_blocks.Log(System.String) kind=method name=Log fqn=Pages._02_razor_code_blocks.Log container=csharp:Pages._02_razor_code_blocks mods=private sig="private void Log(string text)"
+sym csharp:Pages._02_razor_code_blocks.__Render() kind=method name=__Render fqn=Pages._02_razor_code_blocks.__Render container=csharp:Pages._02_razor_code_blocks mods=private sig="private void __Render()"
+sym csharp:Pages._02_razor_code_blocks.counter kind=field name=counter fqn=Pages._02_razor_code_blocks.counter container=csharp:Pages._02_razor_code_blocks mods=private
+loc csharp:Pages decl 1:11-1:1
+loc csharp:Pages._02_razor_code_blocks partial 1:15-1:1
+loc csharp:Pages._02_razor_code_blocks.Compute(System.Int32) decl 19:17-22:5
+loc csharp:Pages._02_razor_code_blocks.Items decl 17:24-17:37
+loc csharp:Pages._02_razor_code_blocks.Log(System.String) decl 24:18-24:37
+loc csharp:Pages._02_razor_code_blocks.__Render() decl 1:14-1:1
+loc csharp:Pages._02_razor_code_blocks.counter decl 15:17-15:28
+ref call target="Compute" at=5:21-5:27 conf=HEURISTIC in=csharp:Pages._02_razor_code_blocks.__Render() arity=1
+ref call target="Log" at=6:9-6:11 conf=HEURISTIC in=csharp:Pages._02_razor_code_blocks.__Render()
+ref type-ref target="Item" at=17:18-17:21 conf=HEURISTIC in=csharp:Pages._02_razor_code_blocks.Items
+ref type-ref target="List" at=17:13-17:16 conf=HEURISTIC in=csharp:Pages._02_razor_code_blocks.Items arity=1 role=has-type
+rel contains csharp:Pages -> csharp:Pages._02_razor_code_blocks
+rel contains csharp:Pages._02_razor_code_blocks -> csharp:Pages._02_razor_code_blocks.Compute(System.Int32)
+rel contains csharp:Pages._02_razor_code_blocks -> csharp:Pages._02_razor_code_blocks.Items
+rel contains csharp:Pages._02_razor_code_blocks -> csharp:Pages._02_razor_code_blocks.Log(System.String)
+rel contains csharp:Pages._02_razor_code_blocks -> csharp:Pages._02_razor_code_blocks.__Render()
+rel contains csharp:Pages._02_razor_code_blocks -> csharp:Pages._02_razor_code_blocks.counter
+# imp: keine
+# diag: keine

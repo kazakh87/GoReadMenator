@@ -1,0 +1,62 @@
+file loc=25 filedoc=""
+sym csharp:Shop kind=namespace name=Shop fqn=Shop
+sym csharp:Shop.Account kind=class name=Account fqn=Shop.Account container=csharp:Shop mods=public sig="public class Account"
+sym csharp:Shop.Account.Account() kind=constructor name=Account fqn=Shop.Account.Account container=csharp:Shop.Account mods=static sig="static Account()"
+sym csharp:Shop.Account.Account(System.Int32) kind=constructor name=Account fqn=Shop.Account.Account container=csharp:Shop.Account mods=public sig="public Account(int a)"
+sym csharp:Shop.Account.Changed kind=event name=Changed fqn=Shop.Account.Changed container=csharp:Shop.Account mods=public
+sym csharp:Shop.Account.Code kind=property name=Code fqn=Shop.Account.Code container=csharp:Shop.Account mods=public
+sym csharp:Shop.Account.Convert(System.Object) kind=method name=Convert fqn=Shop.Account.Convert container=csharp:Shop.Account mods=public sig="public T Convert(object value)"
+sym csharp:Shop.Account.MaxSize kind=field name=MaxSize fqn=Shop.Account.MaxSize container=csharp:Shop.Account mods=public,const
+sym csharp:Shop.Account.Name kind=property name=Name fqn=Shop.Account.Name container=csharp:Shop.Account mods=public
+sym csharp:Shop.Account.Reset() kind=method name=Reset fqn=Shop.Account.Reset container=csharp:Shop.Account mods=public sig="public void Reset()"
+sym csharp:Shop.Account.Sum(System.Int32,System.Int32) kind=method name=Sum fqn=Shop.Account.Sum container=csharp:Shop.Account mods=public sig="public int Sum(int x, int y)"
+sym csharp:Shop.Account.Total kind=property name=Total fqn=Shop.Account.Total container=csharp:Shop.Account mods=public
+sym csharp:Shop.Account._a kind=field name=_a fqn=Shop.Account._a container=csharp:Shop.Account mods=private
+sym csharp:Shop.Account._b kind=field name=_b fqn=Shop.Account._b container=csharp:Shop.Account mods=private
+sym csharp:Shop.Account.implicit operator int(Account) kind=method name=implicit operator int fqn=Shop.Account.implicit operator int container=csharp:Shop.Account mods=public,static sig="public static int implicit operator int(Account a)"
+sym csharp:Shop.Account.operator+(Account,Account) kind=method name=operator+ fqn=Shop.Account.operator+ container=csharp:Shop.Account mods=public,static sig="public static Account operator+(Account l, Account r)"
+sym csharp:Shop.Account.this(System.Int32) kind=indexer name=this fqn=Shop.Account.this container=csharp:Shop.Account mods=public sig="public int this(int index)"
+loc csharp:Shop decl 3:11-3:15
+loc csharp:Shop.Account decl 5:14-33:1
+loc csharp:Shop.Account.Account() decl 15:12-15:24
+loc csharp:Shop.Account.Account(System.Int32) decl 17:12-20:5
+loc csharp:Shop.Account.Changed decl 13:31-13:38
+loc csharp:Shop.Account.Code decl 11:19-11:37
+loc csharp:Shop.Account.Convert(System.Object) decl 25:14-25:50
+loc csharp:Shop.Account.MaxSize decl 8:22-8:34
+loc csharp:Shop.Account.Name decl 9:19-9:36
+loc csharp:Shop.Account.Reset() decl 24:17-24:35
+loc csharp:Shop.Account.Sum(System.Int32,System.Int32) decl 26:16-29:5
+loc csharp:Shop.Account.Total decl 10:16-10:32
+loc csharp:Shop.Account._a decl 7:17-7:23
+loc csharp:Shop.Account._b decl 7:25-7:27
+loc csharp:Shop.Account.implicit operator int(Account) decl 32:28-32:59
+loc csharp:Shop.Account.operator+(Account,Account) decl 31:27-31:77
+loc csharp:Shop.Account.this(System.Int32) decl 12:16-12:56
+ref construct target="Account" at=31:67-31:73 conf=HEURISTIC in=csharp:Shop.Account.operator+(Account,Account) arity=1
+ref type-ref target="Account" at=31:19-31:25 conf=HEURISTIC in=csharp:Shop.Account.operator+(Account,Account) role=returns
+ref type-ref target="Account" at=31:38-31:44 conf=HEURISTIC in=csharp:Shop.Account.operator+(Account,Account) role=param-type
+ref type-ref target="Account" at=31:49-31:55 conf=HEURISTIC in=csharp:Shop.Account.operator+(Account,Account) role=param-type
+ref type-ref target="Account" at=32:41-32:47 conf=HEURISTIC in=csharp:Shop.Account.implicit operator int(Account) role=param-type
+ref type-ref target="EventHandler" at=13:18-13:29 conf=HEURISTIC in=csharp:Shop.Account.Changed role=has-type
+ref type-ref target="T" at=25:12-25:12 conf=HEURISTIC in=csharp:Shop.Account.Convert(System.Object) role=returns
+ref write target="_a" at=19:9-19:10 conf=HEURISTIC in=csharp:Shop.Account.Account(System.Int32)
+ref write target="_a" at=24:27-24:28 conf=HEURISTIC in=csharp:Shop.Account.Reset()
+rel contains csharp:Shop -> csharp:Shop.Account
+rel contains csharp:Shop.Account -> csharp:Shop.Account.Account()
+rel contains csharp:Shop.Account -> csharp:Shop.Account.Account(System.Int32)
+rel contains csharp:Shop.Account -> csharp:Shop.Account.Changed
+rel contains csharp:Shop.Account -> csharp:Shop.Account.Code
+rel contains csharp:Shop.Account -> csharp:Shop.Account.Convert(System.Object)
+rel contains csharp:Shop.Account -> csharp:Shop.Account.MaxSize
+rel contains csharp:Shop.Account -> csharp:Shop.Account.Name
+rel contains csharp:Shop.Account -> csharp:Shop.Account.Reset()
+rel contains csharp:Shop.Account -> csharp:Shop.Account.Sum(System.Int32,System.Int32)
+rel contains csharp:Shop.Account -> csharp:Shop.Account.Total
+rel contains csharp:Shop.Account -> csharp:Shop.Account._a
+rel contains csharp:Shop.Account -> csharp:Shop.Account._b
+rel contains csharp:Shop.Account -> csharp:Shop.Account.implicit operator int(Account)
+rel contains csharp:Shop.Account -> csharp:Shop.Account.operator+(Account,Account)
+rel contains csharp:Shop.Account -> csharp:Shop.Account.this(System.Int32)
+# imp: keine
+# diag: keine

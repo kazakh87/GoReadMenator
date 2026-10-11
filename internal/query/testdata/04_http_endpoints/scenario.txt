@@ -1,0 +1,2 @@
+SZENARIO: Routen des Backends mit den Frontend-Aufrufen, die sie erreichen. Abgefragt über die Endpunkt-Liste: Route, Aktion, Datei und Aufrufer.
+ABDECKUNG: Liste der Routen mit Aktion und Zeile, Aufrufer aus Frontend per Verbindung, Route ohne Aufrufer, Minimal-API, Status

@@ -1,0 +1,12 @@
+file loc=13 filedoc=""
+sym tsjs:src/07_jsx.tsx#App() kind=function name=App fqn=src/07_jsx.tsx#App mods=export sig="export App()"
+loc tsjs:src/07_jsx.tsx#App() decl 6:17-16:1
+ref import target="Button" at=3:8-3:13 conf=EXACT
+ref import target="Card" at=4:10-4:13 conf=EXACT
+ref jsx target="Button" at=12:10-12:15 conf=HEURISTIC in=tsjs:src/07_jsx.tsx#App()
+ref jsx target="Button" at=9:8-9:13 conf=HEURISTIC in=tsjs:src/07_jsx.tsx#App()
+ref jsx target="Card" at=11:8-11:11 conf=HEURISTIC in=tsjs:src/07_jsx.tsx#App()
+# rel: keine
+imp default "./Button" bindings=[Button=default]
+imp esm "./Card" bindings=[Card=Card]
+# diag: keine

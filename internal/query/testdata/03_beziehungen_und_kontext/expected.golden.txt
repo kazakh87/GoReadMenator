@@ -1,0 +1,143 @@
+## neighborhood {"ref":"App.Chain.Engine","depth":1}
+{
+  "items": [
+    {
+      "from": "App.Chain.Engine",
+      "kind": "contains",
+      "to": "App.Chain.Engine.Accelerate"
+    },
+    {
+      "from": "App.Chain.Engine",
+      "kind": "contains",
+      "to": "App.Chain.Engine.Start"
+    },
+    {
+      "from": "App.Chain",
+      "kind": "contains",
+      "to": "App.Chain.Engine"
+    },
+    {
+      "from": "App.Chain.Engine",
+      "kind": "implements",
+      "to": "App.Chain.IStep"
+    },
+    {
+      "from": "App.Chain.Engine",
+      "kind": "inherits",
+      "to": "App.Chain.Base"
+    }
+  ],
+  "total": 5
+}
+
+## neighborhood {"ref":"App.Chain.Engine","depth":2,"relation_kinds":["inherits","implements"]}
+{
+  "items": [
+    {
+      "from": "App.Chain.Engine",
+      "kind": "implements",
+      "to": "App.Chain.IStep"
+    },
+    {
+      "from": "App.Chain.Engine",
+      "kind": "inherits",
+      "to": "App.Chain.Base"
+    }
+  ],
+  "total": 2
+}
+
+## usages {"ref":"App.Chain.Engine.Start(System.Int32)","depth":2}
+{
+  "items": [
+    {
+      "depth": 1,
+      "user": "App.Chain.Driver.Drive",
+      "file": "Chain.cs",
+      "line": 22,
+      "kind": "call"
+    }
+  ],
+  "total": 1
+}
+
+## context {"ref":"App.Chain.Engine","budget_tokens":300}
+{
+  "symbol": {
+    "id": "csharp:App.Chain.Engine",
+    "kind": "class",
+    "fqn": "App.Chain.Engine",
+    "container": "csharp:App.Chain",
+    "sig": "public class Engine",
+    "locations": [
+      {
+        "file": "Chain.cs",
+        "start": 7,
+        "end": 15,
+        "role": "decl"
+      }
+    ],
+    "relations": {
+      "contains": 3,
+      "implements": 1,
+      "inherits": 1
+    }
+  },
+  "edges": [
+    {
+      "from": "App.Chain.Engine",
+      "kind": "contains",
+      "to": "App.Chain.Engine.Accelerate"
+    },
+    {
+      "from": "App.Chain.Engine",
+      "kind": "contains",
+      "to": "App.Chain.Engine.Start"
+    },
+    {
+      "from": "App.Chain",
+      "kind": "contains",
+      "to": "App.Chain.Engine"
+    },
+    {
+      "from": "App.Chain.Engine",
+      "kind": "implements",
+      "to": "App.Chain.IStep"
+    },
+    {
+      "from": "App.Chain.Engine",
+      "kind": "inherits",
+      "to": "App.Chain.Base"
+    }
+  ],
+  "usages": [
+    {
+      "depth": 1,
+      "user": "App.Chain.Driver.Drive",
+      "file": "Chain.cs",
+      "line": 21,
+      "kind": "construct"
+    }
+  ]
+}
+
+## source {"file":"Chain.cs","start_line":5,"end_line":9}
+{
+  "file": "Chain.cs",
+  "start": 5,
+  "end": 9,
+  "lines": [
+    "public class Base { }",
+    "",
+    "public class Engine : Base, IStep",
+    "{",
+    "    public void Start(int speed)"
+  ]
+}
+
+## source {"file":"gibtsnicht.cs","start_line":1,"end_line":3}
+FEHLER: Datei "gibtsnicht.cs" im HEAD nicht gefunden
+
+## get_symbol {"ref":"App.Chain.Nichts"}
+FEHLER: nicht gefunden: kein Symbol "App.Chain.Nichts"
+

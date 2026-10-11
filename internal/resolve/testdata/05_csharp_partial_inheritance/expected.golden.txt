@@ -1,0 +1,23 @@
+# Verwendungen, Beziehungen und Imports (sortiert)
+ref Base.cs:10 type-ref Item -> csharp:Domain.Item [EXACT] in csharp:Domain.Repo.Find(Key)
+ref Base.cs:10 type-ref Key -> csharp:Domain.Key [EXACT] in csharp:Domain.Repo.Find(Key)
+ref Base.cs:3 attribute Serializable -> - [HEURISTIC] in csharp:Domain.Entity
+ref Base.cs:8 implements IStore -> csharp:Domain.IStore [EXACT] in csharp:Domain.Repo
+ref Base.cs:8 inherits Entity -> csharp:Domain.Entity [EXACT] in csharp:Domain.Repo
+ref Repo.Part2.cs:5 type-ref Item -> csharp:Domain.Item [EXACT] in csharp:Domain.Repo._cache
+ref Repo.Part2.cs:7 type-ref Item -> csharp:Domain.Item [EXACT] in csharp:Domain.Repo.Add(Item)
+rel contains csharp:Domain -> csharp:Domain.Entity
+rel contains csharp:Domain -> csharp:Domain.IStore
+rel contains csharp:Domain -> csharp:Domain.Item
+rel contains csharp:Domain -> csharp:Domain.Key
+rel contains csharp:Domain -> csharp:Domain.Repo
+rel contains csharp:Domain -> csharp:Domain.Repo
+rel contains csharp:Domain.Repo -> csharp:Domain.Repo.Add(Item)
+rel contains csharp:Domain.Repo -> csharp:Domain.Repo.Find(Key)
+rel contains csharp:Domain.Repo -> csharp:Domain.Repo._cache
+rel has_type csharp:Domain.Repo._cache -> csharp:Domain.Item
+rel implements csharp:Domain.Repo -> csharp:Domain.IStore
+rel inherits csharp:Domain.Repo -> csharp:Domain.Entity
+rel param_type csharp:Domain.Repo.Add(Item) -> csharp:Domain.Item
+rel param_type csharp:Domain.Repo.Find(Key) -> csharp:Domain.Key
+rel returns csharp:Domain.Repo.Find(Key) -> csharp:Domain.Item

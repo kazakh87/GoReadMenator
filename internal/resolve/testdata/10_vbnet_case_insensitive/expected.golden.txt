@@ -1,0 +1,12 @@
+# Verwendungen, Beziehungen und Imports (sortiert)
+imp App.vb using "Data2=shop.data" -> extern
+imp App.vb using "shop.data" -> extern
+ref App.vb:7 construct repo -> vbnet:Shop.Data.Repo [RESOLVED] in vbnet:Shop.App.Runner.Run()
+ref App.vb:8 call SAVE -> vbnet:Shop.Data.Repo.Save(System.Int32) [HEURISTIC] in vbnet:Shop.App.Runner.Run()
+ref App.vb:9 call Assist -> csharp:Shop.Data.Helper.Assist() [EXACT] in vbnet:Shop.App.Runner.Run()
+rel contains csharp:Shop.Data -> csharp:Shop.Data.Helper
+rel contains csharp:Shop.Data.Helper -> csharp:Shop.Data.Helper.Assist()
+rel contains vbnet:Shop.App -> vbnet:Shop.App.Runner
+rel contains vbnet:Shop.App.Runner -> vbnet:Shop.App.Runner.Run()
+rel contains vbnet:Shop.Data -> vbnet:Shop.Data.Repo
+rel contains vbnet:Shop.Data.Repo -> vbnet:Shop.Data.Repo.Save(System.Int32)

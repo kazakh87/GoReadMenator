@@ -1,0 +1,18 @@
+# Verwendungen, Beziehungen und Imports (sortiert)
+ref Handlers.cs:10 implements IHandler -> csharp:Mediator.IHandler`2 [EXACT] in csharp:Mediator.PingHandler
+ref Handlers.cs:12 cref Mediator.Ping -> csharp:Mediator.Ping [EXACT] in csharp:Mediator.PingHandler.Handle(Ping)
+ref Handlers.cs:12 cref Mediator.PingHandler.Handle(Mediator.Ping) -> csharp:Mediator.PingHandler.Handle(Ping) [EXACT] in csharp:Mediator.PingHandler.Handle(Ping)
+ref Handlers.cs:14 type-ref Ping -> csharp:Mediator.Ping [EXACT] in csharp:Mediator.PingHandler.Handle(Ping)
+ref Handlers.cs:7 implements IRequest -> csharp:Mediator.IRequest`1 [EXACT] in csharp:Mediator.Ping
+ref Handlers.cs:8 implements IRequest2 -> csharp:Mediator.IRequest2`2 [EXACT] in csharp:Mediator.Pong
+rel contains csharp:Mediator -> csharp:Mediator.IHandler`2
+rel contains csharp:Mediator -> csharp:Mediator.IRequest2`2
+rel contains csharp:Mediator -> csharp:Mediator.IRequest`1
+rel contains csharp:Mediator -> csharp:Mediator.Ping
+rel contains csharp:Mediator -> csharp:Mediator.PingHandler
+rel contains csharp:Mediator -> csharp:Mediator.Pong
+rel contains csharp:Mediator.PingHandler -> csharp:Mediator.PingHandler.Handle(Ping)
+rel implements csharp:Mediator.Ping -> csharp:Mediator.IRequest`1
+rel implements csharp:Mediator.PingHandler -> csharp:Mediator.IHandler`2
+rel implements csharp:Mediator.Pong -> csharp:Mediator.IRequest2`2
+rel param_type csharp:Mediator.PingHandler.Handle(Ping) -> csharp:Mediator.Ping

@@ -1,0 +1,10 @@
+# Verwendungen, Beziehungen und Imports (sortiert)
+ref Order.cs:10 construct Line -> csharp:Shop.Core.Order.Line [EXACT] in csharp:Shop.Core.Order.Run()
+ref Order.cs:11 call Assist -> csharp:Shop.Core.Helper.Assist() [EXACT] in csharp:Shop.Core.Order.Run()
+ref Order.cs:9 call Save -> csharp:Shop.Core.Order.Save(System.Int32) [EXACT] in csharp:Shop.Core.Order.Run()
+rel contains csharp:Shop.Core -> csharp:Shop.Core.Helper
+rel contains csharp:Shop.Core -> csharp:Shop.Core.Order
+rel contains csharp:Shop.Core.Helper -> csharp:Shop.Core.Helper.Assist()
+rel contains csharp:Shop.Core.Order -> csharp:Shop.Core.Order.Line
+rel contains csharp:Shop.Core.Order -> csharp:Shop.Core.Order.Run()
+rel contains csharp:Shop.Core.Order -> csharp:Shop.Core.Order.Save(System.Int32)

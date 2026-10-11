@@ -1,0 +1,7 @@
+find_symbols {"q":"Catalog"}
+find_symbols {"q":"Find","kind":"method"}
+get_symbol {"ref":"Shop.Catalog.Catalog.Find"}
+get_symbol {"ref":"Find"}
+get_symbol {"ref":"csharp:Shop.Catalog.Item"}
+api {"scope":"Shop.Catalog."}
+status {}

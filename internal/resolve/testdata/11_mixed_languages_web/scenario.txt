@@ -1,0 +1,2 @@
+SZENARIO: Ein ASP.NET-Projekt mischt C#, VB.NET und TypeScript. C# und VB teilen die .NET-Namen: Typen und Methoden werden über Sprachgrenzen aufgelöst. C# bleibt case-sensitiv, TypeScript ist eine eigene Welt ohne Querverbindungen.
+ABDECKUNG: C# nutzt VB-Typ, VB nutzt C#-Typ, Methodenaufruf über Objekt, C#-Aufruf mit falscher Schreibweise bleibt offen, VB-Aufruf mit falscher Schreibweise wird aufgelöst, TypeScript-Funktion ohne Querverbindung

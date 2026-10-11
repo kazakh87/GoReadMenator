@@ -1,0 +1,7 @@
+neighborhood {"ref":"App.Chain.Engine","depth":1}
+neighborhood {"ref":"App.Chain.Engine","depth":2,"relation_kinds":["inherits","implements"]}
+usages {"ref":"App.Chain.Engine.Start(System.Int32)","depth":2}
+context {"ref":"App.Chain.Engine","budget_tokens":300}
+source {"file":"Chain.cs","start_line":5,"end_line":9}
+source {"file":"gibtsnicht.cs","start_line":1,"end_line":3}
+get_symbol {"ref":"App.Chain.Nichts"}

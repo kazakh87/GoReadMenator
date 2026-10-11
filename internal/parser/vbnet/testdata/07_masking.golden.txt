@@ -1,0 +1,18 @@
+file loc=13 filedoc=""
+sym vbnet:Shop kind=namespace name=Shop fqn=Shop
+sym vbnet:Shop.Texts kind=class name=Texts fqn=Shop.Texts container=vbnet:Shop mods=public sig="public class Texts"
+sym vbnet:Shop.Texts.Compute(System.Int32,System.Int32) kind=method name=Compute fqn=Shop.Texts.Compute container=vbnet:Shop.Texts mods=private sig="private function Compute(a As Integer, b As Integer) As Integer"
+sym vbnet:Shop.Texts.Go(System.Int32,System.Int32) kind=method name=Go fqn=Shop.Texts.Go container=vbnet:Shop.Texts mods=public sig="public sub Go(x As Integer, y As Integer)"
+sym vbnet:Shop.Texts.Quoted kind=field name=Quoted fqn=Shop.Texts.Quoted container=vbnet:Shop.Texts mods=public
+loc vbnet:Shop decl 3:11-19:13
+loc vbnet:Shop.Texts decl 6:18-18:13
+loc vbnet:Shop.Texts.Compute(System.Int32,System.Int32) decl 15:26-17:20
+loc vbnet:Shop.Texts.Go(System.Int32,System.Int32) decl 8:20-14:15
+loc vbnet:Shop.Texts.Quoted decl 7:22-7:77
+ref call target="Compute" at=11:21-11:27 conf=HEURISTIC in=vbnet:Shop.Texts.Go(System.Int32,System.Int32) arity=2
+rel contains vbnet:Shop -> vbnet:Shop.Texts
+rel contains vbnet:Shop.Texts -> vbnet:Shop.Texts.Compute(System.Int32,System.Int32)
+rel contains vbnet:Shop.Texts -> vbnet:Shop.Texts.Go(System.Int32,System.Int32)
+rel contains vbnet:Shop.Texts -> vbnet:Shop.Texts.Quoted
+# imp: keine
+# diag: keine

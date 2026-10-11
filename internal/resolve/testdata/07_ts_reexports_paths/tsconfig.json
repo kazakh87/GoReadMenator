@@ -1,0 +1,7 @@
+{
+  // Pfad-Aliase für den Quelltext
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": { "@core/*": ["src/core/*"], },
+  }
+}

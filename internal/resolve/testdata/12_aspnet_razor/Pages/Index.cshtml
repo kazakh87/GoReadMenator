@@ -1,0 +1,9 @@
+@using Shop.Services
+@model Shop.Models.Order
+@inject IPricing Pricing
+
+<p>@Pricing.Format(Model.Total)</p>
+
+@code {
+    private string Label() => Pricing.Format(0);
+}

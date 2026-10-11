@@ -1,0 +1,4 @@
+# Verwendungen, Beziehungen und Imports (sortiert)
+ref b.ts:3 call get -> tsjs:a.ts#Cache.get(string) [HEURISTIC] in tsjs:b.ts#user(any)
+ref b.ts:4 call refresh -> tsjs:b.ts#refresh() [EXACT] in tsjs:b.ts#user(any)
+rel contains tsjs:a.ts#Cache -> tsjs:a.ts#Cache.get(string)

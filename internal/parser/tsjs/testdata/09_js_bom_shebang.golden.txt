@@ -1,0 +1,18 @@
+file loc=11 filedoc=""
+sym tsjs:src/09_js_bom_shebang.js#Cache kind=class name=Cache fqn=src/09_js_bom_shebang.js#Cache sig="class Cache" doc=inline
+sym tsjs:src/09_js_bom_shebang.js#Cache.constructor(any) kind=constructor name=constructor fqn=src/09_js_bom_shebang.js#Cache.constructor container=tsjs:src/09_js_bom_shebang.js#Cache sig="constructor(size: any)"
+sym tsjs:src/09_js_bom_shebang.js#Cache.get(any) kind=method name=get fqn=src/09_js_bom_shebang.js#Cache.get container=tsjs:src/09_js_bom_shebang.js#Cache sig="get(key: any)"
+sym tsjs:src/09_js_bom_shebang.js#make(any) kind=function name=make fqn=src/09_js_bom_shebang.js#make sig="make(n: any)"
+sym tsjs:src/09_js_bom_shebang.js#path kind=variable name=path fqn=src/09_js_bom_shebang.js#path doc=inline
+loc tsjs:src/09_js_bom_shebang.js#Cache decl 6:7-13:1
+loc tsjs:src/09_js_bom_shebang.js#Cache.constructor(any) decl 7:3-9:3
+loc tsjs:src/09_js_bom_shebang.js#Cache.get(any) decl 10:3-12:3
+loc tsjs:src/09_js_bom_shebang.js#make(any) decl 15:7-15:32
+loc tsjs:src/09_js_bom_shebang.js#path decl 4:7-4:28
+ref construct target="Cache" at=15:25-15:29 conf=HEURISTIC in=tsjs:src/09_js_bom_shebang.js#make(any) arity=-1
+ref write target="exports" at=16:8-16:14 conf=HEURISTIC
+ref write target="size" at=8:10-8:13 conf=HEURISTIC in=tsjs:src/09_js_bom_shebang.js#Cache.constructor(any)
+rel contains tsjs:src/09_js_bom_shebang.js#Cache -> tsjs:src/09_js_bom_shebang.js#Cache.constructor(any)
+rel contains tsjs:src/09_js_bom_shebang.js#Cache -> tsjs:src/09_js_bom_shebang.js#Cache.get(any)
+imp require "path"
+# diag: keine

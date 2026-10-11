@@ -1,0 +1,28 @@
+file loc=23 filedoc=""
+sym tsjs:src/02_functions.ts#add(number,number) kind=function name=add fqn=src/02_functions.ts#add mods=export sig="export add(a: number, b: number): number"
+sym tsjs:src/02_functions.ts#answer kind=variable name=answer fqn=src/02_functions.ts#answer mods=export doc=inline
+sym tsjs:src/02_functions.ts#double(number) kind=function name=double fqn=src/02_functions.ts#double mods=export sig="export double(n: number): number"
+sym tsjs:src/02_functions.ts#greet(any) kind=function name=greet fqn=src/02_functions.ts#greet mods=async sig="async greet(name: any)"
+sym tsjs:src/02_functions.ts#handler(Request) kind=function name=handler fqn=src/02_functions.ts#handler sig="handler(req: Request)"
+sym tsjs:src/02_functions.ts#helper(any) kind=function name=helper fqn=src/02_functions.ts#helper sig="helper(s: any)"
+sym tsjs:src/02_functions.ts#identity(T) kind=function name=identity fqn=src/02_functions.ts#identity mods=export sig="export identity(value: T): T"
+sym tsjs:src/02_functions.ts#main() kind=function name=main fqn=src/02_functions.ts#main mods=export,default sig="export default main()"
+sym tsjs:src/02_functions.ts#pick(any) kind=function name=pick fqn=src/02_functions.ts#pick mods=export sig="export pick(x: any): any"
+sym tsjs:src/02_functions.ts#pick(number) kind=function name=pick fqn=src/02_functions.ts#pick mods=export sig="export pick(x: number): number"
+sym tsjs:src/02_functions.ts#pick(string) kind=function name=pick fqn=src/02_functions.ts#pick mods=export sig="export pick(x: string): string"
+loc tsjs:src/02_functions.ts#add(number,number) decl 3:17-5:1
+loc tsjs:src/02_functions.ts#answer decl 26:14-26:24
+loc tsjs:src/02_functions.ts#double(number) decl 13:14-13:50
+loc tsjs:src/02_functions.ts#greet(any) decl 14:7-16:1
+loc tsjs:src/02_functions.ts#handler(Request) decl 17:7-19:1
+loc tsjs:src/02_functions.ts#helper(any) decl 27:10-27:32
+loc tsjs:src/02_functions.ts#identity(T) decl 20:17-22:1
+loc tsjs:src/02_functions.ts#main() decl 23:25-25:1
+loc tsjs:src/02_functions.ts#pick(any) decl 9:17-11:1
+loc tsjs:src/02_functions.ts#pick(number) decl 8:17-8:40
+loc tsjs:src/02_functions.ts#pick(string) decl 7:17-7:40
+ref call target="helper" at=15:10-15:15 conf=HEURISTIC in=tsjs:src/02_functions.ts#greet(any) arity=1
+ref type-ref target="Request" at=17:32-17:38 conf=HEURISTIC in=tsjs:src/02_functions.ts#handler(Request) role=param-type
+# rel: keine
+# imp: keine
+# diag: keine

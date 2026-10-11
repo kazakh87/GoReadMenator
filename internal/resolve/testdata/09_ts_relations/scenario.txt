@@ -1,0 +1,2 @@
+SZENARIO: Beziehungen aus Typverweisen: Eigenschaftstyp, Parameter- und Rückgabetyp über Dateigrenzen, Vererbung und Interface-Implementierung
+ABDECKUNG: has_type, param_type, returns, inherits, implements über Import

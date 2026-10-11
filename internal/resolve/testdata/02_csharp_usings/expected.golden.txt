@@ -1,0 +1,20 @@
+# Verwendungen, Beziehungen und Imports (sortiert)
+imp Service.cs using "Alias=Shop.Models.Customer" -> extern
+imp Service.cs using "Shop.Models" -> extern
+imp Service.cs using "static Shop.Models.Limits" -> extern
+ref Service.cs:10 type-ref Alias -> csharp:Shop.Models.Customer [RESOLVED] in csharp:Shop.Services.Service.a
+ref Service.cs:11 call Clamp -> csharp:Shop.Models.Limits.Clamp(System.Int32) [RESOLVED] in csharp:Shop.Services.Service.m
+ref Service.cs:12 type-ref Secret -> csharp:Shop.Hidden.Secret [HEURISTIC] in csharp:Shop.Services.Service.s
+ref Service.cs:9 type-ref Customer -> csharp:Shop.Models.Customer [RESOLVED] in csharp:Shop.Services.Service.c
+rel contains csharp:Shop.Hidden -> csharp:Shop.Hidden.Secret
+rel contains csharp:Shop.Models -> csharp:Shop.Models.Customer
+rel contains csharp:Shop.Models -> csharp:Shop.Models.Limits
+rel contains csharp:Shop.Models.Limits -> csharp:Shop.Models.Limits.Clamp(System.Int32)
+rel contains csharp:Shop.Models.Limits -> csharp:Shop.Models.Limits.Max
+rel contains csharp:Shop.Services -> csharp:Shop.Services.Service
+rel contains csharp:Shop.Services.Service -> csharp:Shop.Services.Service.a
+rel contains csharp:Shop.Services.Service -> csharp:Shop.Services.Service.c
+rel contains csharp:Shop.Services.Service -> csharp:Shop.Services.Service.m
+rel contains csharp:Shop.Services.Service -> csharp:Shop.Services.Service.s
+rel has_type csharp:Shop.Services.Service.a -> csharp:Shop.Models.Customer
+rel has_type csharp:Shop.Services.Service.c -> csharp:Shop.Models.Customer

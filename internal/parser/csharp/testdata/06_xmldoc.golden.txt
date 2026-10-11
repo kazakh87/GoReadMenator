@@ -1,0 +1,19 @@
+file loc=6 filedoc=""
+sym csharp:Shop kind=namespace name=Shop fqn=Shop
+sym csharp:Shop.Processor`1 kind=class name=Processor fqn=Shop.Processor`1 container=csharp:Shop mods=public sig="public class Processor`1" summary="Verarbeitet Order Bestellungen & Zahlungen." remarks="Nur für Shop gedacht." doc=inline
+sym csharp:Shop.Processor`1.Start(Order) kind=method name=Start fqn=Shop.Processor`1.Start container=csharp:Shop.Processor`1 mods=public sig="public T Start(Order order)" summary="Startet die Verarbeitung." returns="Das Ergebnis, siehe ." param[order]="Die Order, die verarbeitet wird." doc=inline
+sym csharp:Shop.Processor`1.Stop() kind=method name=Stop fqn=Shop.Processor`1.Stop container=csharp:Shop.Processor`1 mods=public sig="public void Stop()" summary="Stoppt in mehreren Zeilen." doc=inline
+loc csharp:Shop decl 3:11-3:15
+loc csharp:Shop.Processor`1 decl 9:14-22:1
+loc csharp:Shop.Processor`1.Start(Order) decl 15:14-15:43
+loc csharp:Shop.Processor`1.Stop() decl 21:17-21:26
+ref cref target="Order" at=11:1-14:1 conf=EXACT in=csharp:Shop.Processor`1.Start(Order)
+ref cref target="Order" at=5:1-8:1 conf=EXACT in=csharp:Shop.Processor`1
+ref cref target="Processor<T>.Stop()" at=11:1-14:1 conf=EXACT in=csharp:Shop.Processor`1.Start(Order)
+ref type-ref target="Order" at=15:20-15:24 conf=HEURISTIC in=csharp:Shop.Processor`1.Start(Order) role=param-type
+ref type-ref target="T" at=15:12-15:12 conf=HEURISTIC in=csharp:Shop.Processor`1.Start(Order) role=returns
+rel contains csharp:Shop -> csharp:Shop.Processor`1
+rel contains csharp:Shop.Processor`1 -> csharp:Shop.Processor`1.Start(Order)
+rel contains csharp:Shop.Processor`1 -> csharp:Shop.Processor`1.Stop()
+# imp: keine
+# diag: keine

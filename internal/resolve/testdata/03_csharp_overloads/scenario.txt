@@ -1,0 +1,2 @@
+SZENARIO: Überladungen werden über die Argumentzahl getrennt. Gleiche Argumentzahl bleibt mehrdeutig und wird nicht geraten.
+ABDECKUNG: Arity-Filter bei Aufrufen, eindeutige Überladung, mehrdeutige Überladung bleibt unaufgelöst

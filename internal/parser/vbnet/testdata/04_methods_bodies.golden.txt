@@ -1,0 +1,33 @@
+file loc=25 filedoc=""
+sym vbnet:Shop kind=namespace name=Shop fqn=Shop
+sym vbnet:Shop.Client kind=class name=Client fqn=Shop.Client container=vbnet:Shop mods=public sig="public class Client"
+sym vbnet:Shop.Client.Load(System.Int32,Filter) kind=method name=Load fqn=Shop.Client.Load container=vbnet:Shop.Client mods=public sig="public function Load(id As Integer, filter As Filter) As Order"
+sym vbnet:Shop.Client.Log(System.Int32) kind=method name=Log fqn=Shop.Client.Log container=vbnet:Shop.Client mods=private sig="private sub Log(a As Integer)"
+sym vbnet:Shop.Client.Log(System.Int32,System.String,System.Boolean) kind=method name=Log fqn=Shop.Client.Log container=vbnet:Shop.Client mods=private sig="private sub Log(a As Integer, b As String, c As Boolean)"
+sym vbnet:Shop.Client.Run() kind=method name=Run fqn=Shop.Client.Run container=vbnet:Shop.Client mods=public sig="public sub Run()"
+sym vbnet:Shop.Client._repo kind=field name=_repo fqn=Shop.Client._repo container=vbnet:Shop.Client mods=private
+loc vbnet:Shop decl 3:11-31:13
+loc vbnet:Shop.Client decl 4:18-30:13
+loc vbnet:Shop.Client.Load(System.Int32,Filter) decl 7:25-18:20
+loc vbnet:Shop.Client.Log(System.Int32) decl 23:21-24:15
+loc vbnet:Shop.Client.Log(System.Int32,System.String,System.Boolean) decl 20:21-21:15
+loc vbnet:Shop.Client.Run() decl 26:20-29:15
+loc vbnet:Shop.Client._repo decl 5:17-5:29
+ref call target="Assist" at=10:20-10:25 conf=HEURISTIC in=vbnet:Shop.Client.Load(System.Int32,Filter) arity=1 qual=Helper
+ref call target="Log" at=14:21-14:23 conf=HEURISTIC in=vbnet:Shop.Client.Load(System.Int32,Filter) arity=3
+ref call target="Log" at=27:13-27:15 conf=HEURISTIC in=vbnet:Shop.Client.Run() arity=1
+ref call target="Log" at=28:13-28:15 conf=HEURISTIC in=vbnet:Shop.Client.Run()
+ref call target="Save" at=9:19-9:22 conf=HEURISTIC in=vbnet:Shop.Client.Load(System.Int32,Filter) arity=1 qual=_repo
+ref construct target="Order" at=8:25-8:29 conf=HEURISTIC in=vbnet:Shop.Client.Load(System.Int32,Filter)
+ref type-ref target="Filter" at=7:55-7:60 conf=HEURISTIC in=vbnet:Shop.Client.Load(System.Int32,Filter) role=param-type
+ref type-ref target="Order" at=7:66-7:70 conf=HEURISTIC in=vbnet:Shop.Client.Load(System.Int32,Filter) role=returns
+ref type-ref target="Repo" at=5:26-5:29 conf=HEURISTIC in=vbnet:Shop.Client._repo role=has-type
+ref write target="_count" at=11:16-11:21 conf=HEURISTIC in=vbnet:Shop.Client.Load(System.Int32,Filter)
+rel contains vbnet:Shop -> vbnet:Shop.Client
+rel contains vbnet:Shop.Client -> vbnet:Shop.Client.Load(System.Int32,Filter)
+rel contains vbnet:Shop.Client -> vbnet:Shop.Client.Log(System.Int32)
+rel contains vbnet:Shop.Client -> vbnet:Shop.Client.Log(System.Int32,System.String,System.Boolean)
+rel contains vbnet:Shop.Client -> vbnet:Shop.Client.Run()
+rel contains vbnet:Shop.Client -> vbnet:Shop.Client._repo
+# imp: keine
+# diag: keine

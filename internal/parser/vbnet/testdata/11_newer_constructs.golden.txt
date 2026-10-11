@@ -1,0 +1,24 @@
+file loc=18 filedoc=""
+sym vbnet:App kind=namespace name=App fqn=App
+sym vbnet:App.Svc kind=class name=Svc fqn=App.Svc container=vbnet:App mods=public sig="public class Svc"
+sym vbnet:App.Svc.Fetch(System.Int32) kind=method name=Fetch fqn=App.Svc.Fetch container=vbnet:App.Svc mods=public,async sig="public async function Fetch(id As Integer) As Task ( Of String )"
+sym vbnet:App.Svc.Items() kind=method name=Items fqn=App.Svc.Items container=vbnet:App.Svc mods=public,iterator sig="public iterator function Items() As IEnumerable ( Of Integer )"
+sym vbnet:App.Svc.Pair() kind=method name=Pair fqn=App.Svc.Pair container=vbnet:App.Svc mods=public sig="public function Pair() As ( Left As Integer , Right As String )"
+sym vbnet:App.Svc.Show() kind=method name=Show fqn=App.Svc.Show container=vbnet:App.Svc mods=public sig="public sub Show()"
+loc vbnet:App decl 3:11-23:13
+loc vbnet:App.Svc decl 4:18-22:13
+loc vbnet:App.Svc.Fetch(System.Int32) decl 5:31-7:20
+loc vbnet:App.Svc.Items() decl 19:34-21:20
+loc vbnet:App.Svc.Pair() decl 9:25-11:20
+loc vbnet:App.Svc.Show() decl 13:20-17:15
+ref call target="Load" at=6:26-6:29 conf=HEURISTIC in=vbnet:App.Svc.Fetch(System.Int32) arity=1
+ref call target="WriteLine" at=16:21-16:29 conf=HEURISTIC in=vbnet:App.Svc.Show() arity=1 qual=Console
+ref type-ref target="IEnumerable" at=19:45-19:55 conf=HEURISTIC in=vbnet:App.Svc.Items() role=returns
+ref type-ref target="Task" at=5:55-5:58 conf=HEURISTIC in=vbnet:App.Svc.Fetch(System.Int32) role=returns
+rel contains vbnet:App -> vbnet:App.Svc
+rel contains vbnet:App.Svc -> vbnet:App.Svc.Fetch(System.Int32)
+rel contains vbnet:App.Svc -> vbnet:App.Svc.Items()
+rel contains vbnet:App.Svc -> vbnet:App.Svc.Pair()
+rel contains vbnet:App.Svc -> vbnet:App.Svc.Show()
+# imp: keine
+# diag: keine

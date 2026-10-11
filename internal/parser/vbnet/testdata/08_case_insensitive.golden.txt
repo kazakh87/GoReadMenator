@@ -1,0 +1,18 @@
+file loc=12 filedoc=""
+sym vbnet:Shop kind=namespace name=Shop fqn=Shop
+sym vbnet:Shop.Client kind=class name=Client fqn=Shop.Client container=vbnet:Shop mods=public sig="public class Client"
+sym vbnet:Shop.Client.Run() kind=method name=Run fqn=Shop.Client.Run container=vbnet:Shop.Client sig="sub Run()"
+sym vbnet:Shop.Order kind=class name=Order fqn=Shop.Order container=vbnet:Shop mods=public sig="public class Order"
+sym vbnet:Shop.Order.Save(System.Int32) kind=method name=Save fqn=Shop.Order.Save container=vbnet:Shop.Order mods=public sig="public sub Save(id As INTEGER)"
+loc vbnet:Shop decl 3:11-14:13
+loc vbnet:Shop.Client decl 8:18-13:13
+loc vbnet:Shop.Client.Run() decl 9:13-12:15
+loc vbnet:Shop.Order decl 4:18-7:13
+loc vbnet:Shop.Order.Save(System.Int32) decl 5:20-6:15
+ref call target="SAVE" at=10:19-10:22 conf=HEURISTIC in=vbnet:Shop.Client.Run() arity=1 qual=order
+rel contains vbnet:Shop -> vbnet:Shop.Client
+rel contains vbnet:Shop -> vbnet:Shop.Order
+rel contains vbnet:Shop.Client -> vbnet:Shop.Client.Run()
+rel contains vbnet:Shop.Order -> vbnet:Shop.Order.Save(System.Int32)
+# imp: keine
+# diag: keine

@@ -1,0 +1,15 @@
+file loc=10 filedoc=""
+sym vbnet:Shop kind=namespace name=Shop fqn=Shop
+sym vbnet:Shop.Orders kind=class name=Orders fqn=Shop.Orders container=vbnet:Shop mods=public sig="public class Orders"
+sym vbnet:Shop.Orders.Start(System.Int32) kind=method name=Start fqn=Shop.Orders.Start container=vbnet:Shop.Orders mods=public sig="public function Start(id As Integer) As Boolean" summary="Startet Verarbeitung & Prüfung." returns="Das Ergebnis." param[id]="Die Nummer." doc=inline
+loc vbnet:Shop decl 3:11-15:13
+loc vbnet:Shop.Orders decl 6:18-14:13
+loc vbnet:Shop.Orders.Start(System.Int32) decl 11:25-13:20
+ref attribute target="Obsolete" at=5:6-5:13 conf=HEURISTIC in=vbnet:Shop.Orders
+ref attribute target="Required" at=10:10-10:17 conf=HEURISTIC in=vbnet:Shop.Orders.Start(System.Int32)
+ref attribute target="Route" at=5:23-5:27 conf=HEURISTIC in=vbnet:Shop.Orders
+ref attribute target="Serializable" at=4:6-4:17 conf=HEURISTIC in=vbnet:Shop.Orders
+rel contains vbnet:Shop -> vbnet:Shop.Orders
+rel contains vbnet:Shop.Orders -> vbnet:Shop.Orders.Start(System.Int32)
+# imp: keine
+# diag: keine

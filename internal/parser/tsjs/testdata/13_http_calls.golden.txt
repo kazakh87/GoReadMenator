@@ -1,0 +1,31 @@
+file loc=7 filedoc=""
+sym tsjs:src/13_http_calls.ts#a() kind=function name=a fqn=src/13_http_calls.ts#a mods=export,async sig="export async a()"
+sym tsjs:src/13_http_calls.ts#b(number) kind=function name=b fqn=src/13_http_calls.ts#b mods=export,async sig="export async b(id: number)"
+sym tsjs:src/13_http_calls.ts#c(number) kind=function name=c fqn=src/13_http_calls.ts#c mods=export,async sig="export async c(id: number)"
+sym tsjs:src/13_http_calls.ts#d(string) kind=function name=d fqn=src/13_http_calls.ts#d mods=export,async sig="export async d(body: string)"
+sym tsjs:src/13_http_calls.ts#e(number) kind=function name=e fqn=src/13_http_calls.ts#e mods=export,async sig="export async e(id: number)"
+sym tsjs:src/13_http_calls.ts#f(number) kind=function name=f fqn=src/13_http_calls.ts#f mods=export,async sig="export async f(id: number)"
+sym tsjs:src/13_http_calls.ts#g(string) kind=function name=g fqn=src/13_http_calls.ts#g mods=export,async sig="export async g(url: string)"
+loc tsjs:src/13_http_calls.ts#a() decl 3:23-3:58
+loc tsjs:src/13_http_calls.ts#b(number) decl 4:23-4:74
+loc tsjs:src/13_http_calls.ts#c(number) decl 5:23-5:78
+loc tsjs:src/13_http_calls.ts#d(string) decl 6:23-6:96
+loc tsjs:src/13_http_calls.ts#e(number) decl 7:23-7:83
+loc tsjs:src/13_http_calls.ts#f(number) decl 8:23-8:76
+loc tsjs:src/13_http_calls.ts#g(string) decl 9:23-9:59
+ref call target="fetch" at=3:36-3:40 conf=HEURISTIC in=tsjs:src/13_http_calls.ts#a() arity=1
+ref call target="fetch" at=4:46-4:50 conf=HEURISTIC in=tsjs:src/13_http_calls.ts#b(number) arity=1
+ref call target="fetch" at=5:46-5:50 conf=HEURISTIC in=tsjs:src/13_http_calls.ts#c(number) arity=1
+ref call target="fetch" at=6:48-6:52 conf=HEURISTIC in=tsjs:src/13_http_calls.ts#d(string) arity=2
+ref call target="fetch" at=9:47-9:51 conf=HEURISTIC in=tsjs:src/13_http_calls.ts#g(string) arity=1
+ref call target="get" at=8:51-8:53 conf=HEURISTIC in=tsjs:src/13_http_calls.ts#f(number) arity=1 qual=http
+ref call target="post" at=7:52-7:55 conf=HEURISTIC in=tsjs:src/13_http_calls.ts#e(number) arity=2 qual=axios
+ref http-call target="GET api/items/{}" at=8:51-8:53 conf=HEURISTIC in=tsjs:src/13_http_calls.ts#f(number)
+ref http-call target="GET api/orders" at=3:36-3:40 conf=HEURISTIC in=tsjs:src/13_http_calls.ts#a()
+ref http-call target="GET api/orders/{}" at=4:46-4:50 conf=HEURISTIC in=tsjs:src/13_http_calls.ts#b(number)
+ref http-call target="GET api/orders/{}" at=5:46-5:50 conf=HEURISTIC in=tsjs:src/13_http_calls.ts#c(number)
+ref http-call target="POST api/orders" at=6:48-6:52 conf=HEURISTIC in=tsjs:src/13_http_calls.ts#d(string)
+ref http-call target="POST api/orders/{}" at=7:52-7:55 conf=HEURISTIC in=tsjs:src/13_http_calls.ts#e(number)
+# rel: keine
+# imp: keine
+# diag: keine

@@ -1,0 +1,28 @@
+file loc=12 filedoc=""
+sym tsjs:src/01_imports_exports.ts#fs kind=variable name=fs fqn=src/01_imports_exports.ts#fs doc=inline
+sym tsjs:src/01_imports_exports.ts#lazy kind=variable name=lazy fqn=src/01_imports_exports.ts#lazy doc=inline
+sym tsjs:src/01_imports_exports.ts#local kind=variable name=local fqn=src/01_imports_exports.ts#local mods=export doc=inline
+loc tsjs:src/01_imports_exports.ts#fs decl 9:7-9:24
+loc tsjs:src/01_imports_exports.ts#lazy decl 10:7-10:29
+loc tsjs:src/01_imports_exports.ts#local decl 16:14-16:26
+ref import target="Bar" at=4:42-4:44 conf=EXACT
+ref import target="Config" at=7:15-7:20 conf=EXACT
+ref import target="Dispatch" at=4:25-4:32 conf=EXACT
+ref import target="Foo" at=4:35-4:37 conf=EXACT
+ref import target="React" at=3:8-3:12 conf=EXACT
+ref import target="legacy" at=8:1-8:6 conf=EXACT
+ref import target="useState" at=4:10-4:17 conf=EXACT
+ref import target="utils" at=5:13-5:17 conf=EXACT
+# rel: keine
+imp default "react" bindings=[React=default]
+imp dynamic "./lazy"
+imp esm "./polyfill"
+imp esm "react/hooks" bindings=[useState=useState,Dispatch=Dispatch,Bar=Foo]
+imp namespace "./utils" bindings=[utils=*]
+imp reexport "./barrel"
+imp reexport "./namespace-reexport"
+imp reexport "./reexports" bindings=[a=a,c=b]
+imp require "fs"
+imp require "legacy-lib"
+imp type-only "./config" bindings=[Config=Config]
+# diag: keine

@@ -1,0 +1,15 @@
+# Verwendungen, Beziehungen und Imports (sortiert)
+imp src/core/index.ts reexport "./model" -> src/core/model.ts
+imp src/core/index.ts reexport "./model" -> src/core/model.ts
+imp src/main.ts esm "@core/index" -> src/core/index.ts
+imp src/main.ts esm "@core/model" -> src/core/model.ts
+ref src/core/model.ts:2 type-ref Options -> tsjs:src/core/model.ts#Options [EXACT] in tsjs:src/core/model.ts#build(Options)
+ref src/main.ts:1 import Options -> tsjs:src/core/model.ts#Options [EXACT] in 
+ref src/main.ts:1 import make -> tsjs:src/core/model.ts#build(Options) [EXACT] in 
+ref src/main.ts:2 import build -> tsjs:src/core/model.ts#build(Options) [EXACT] in 
+ref src/main.ts:4 type-ref Options -> tsjs:src/core/model.ts#Options [EXACT] in tsjs:src/main.ts#opts
+ref src/main.ts:5 call make -> tsjs:src/core/model.ts#build(Options) [EXACT] in tsjs:src/main.ts#a
+ref src/main.ts:6 call build -> tsjs:src/core/model.ts#build(Options) [EXACT] in tsjs:src/main.ts#b
+rel contains tsjs:src/core/model.ts#Options -> tsjs:src/core/model.ts#Options.verbose
+rel has_type tsjs:src/main.ts#opts -> tsjs:src/core/model.ts#Options
+rel param_type tsjs:src/core/model.ts#build(Options) -> tsjs:src/core/model.ts#Options

@@ -1,0 +1,34 @@
+# Verwendungen, Beziehungen und Imports (sortiert)
+imp Controllers/OrdersController.cs using "Web.Models" -> extern
+imp Controllers/OrdersController.cs using "Web.Services" -> extern
+imp Services/OrderService.vb using "Web.Models" -> extern
+ref Controllers/OrdersController.cs:0 http-convention ACTION orders/get -> - [EXACT] in csharp:Web.Controllers.OrdersController.Get(System.Int32)
+ref Controllers/OrdersController.cs:0 http-convention ACTION orders/post -> - [EXACT] in csharp:Web.Controllers.OrdersController.Post(Order)
+ref Controllers/OrdersController.cs:10 type-ref Order -> csharp:Web.Models.Order [RESOLVED] in csharp:Web.Controllers.OrdersController.Get(System.Int32)
+ref Controllers/OrdersController.cs:12 call Find -> vbnet:Web.Services.OrderService.Find(System.Int32) [EXACT] in csharp:Web.Controllers.OrdersController.Get(System.Int32)
+ref Controllers/OrdersController.cs:15 type-ref Order -> csharp:Web.Models.Order [RESOLVED] in csharp:Web.Controllers.OrdersController.Post(Order)
+ref Controllers/OrdersController.cs:17 call Save -> vbnet:Web.Services.OrderService.Save(Order) [EXACT] in csharp:Web.Controllers.OrdersController.Post(Order)
+ref Controllers/OrdersController.cs:18 call save -> - [HEURISTIC] in csharp:Web.Controllers.OrdersController.Post(Order)
+ref Controllers/OrdersController.cs:8 construct OrderService -> vbnet:Web.Services.OrderService [RESOLVED] in csharp:Web.Controllers.OrdersController.svc
+ref Controllers/OrdersController.cs:8 type-ref OrderService -> vbnet:Web.Services.OrderService [RESOLVED] in csharp:Web.Controllers.OrdersController.svc
+ref Services/OrderService.vb:13 construct Order -> csharp:Web.Models.Order [RESOLVED] in vbnet:Web.Services.OrderService.Audit()
+ref Services/OrderService.vb:14 call SAVE -> vbnet:Web.Services.OrderService.Save(Order) [EXACT] in vbnet:Web.Services.OrderService.Audit()
+ref Services/OrderService.vb:5 type-ref Order -> csharp:Web.Models.Order [RESOLVED] in vbnet:Web.Services.OrderService.Find(System.Int32)
+ref Services/OrderService.vb:9 type-ref Order -> csharp:Web.Models.Order [RESOLVED] in vbnet:Web.Services.OrderService.Save(Order)
+ref wwwroot/app.ts:2 call fetch -> - [HEURISTIC] in tsjs:wwwroot/app.ts#load(number)
+ref wwwroot/app.ts:2 http-call GET api/orders/{} -> - [HEURISTIC] in tsjs:wwwroot/app.ts#load(number)
+rel contains csharp:Web.Controllers -> csharp:Web.Controllers.OrdersController
+rel contains csharp:Web.Controllers.OrdersController -> csharp:Web.Controllers.OrdersController.Get(System.Int32)
+rel contains csharp:Web.Controllers.OrdersController -> csharp:Web.Controllers.OrdersController.Post(Order)
+rel contains csharp:Web.Controllers.OrdersController -> csharp:Web.Controllers.OrdersController.svc
+rel contains csharp:Web.Models -> csharp:Web.Models.Order
+rel contains csharp:Web.Models.Order -> csharp:Web.Models.Order.Id
+rel contains vbnet:Web.Services -> vbnet:Web.Services.OrderService
+rel contains vbnet:Web.Services.OrderService -> vbnet:Web.Services.OrderService.Audit()
+rel contains vbnet:Web.Services.OrderService -> vbnet:Web.Services.OrderService.Find(System.Int32)
+rel contains vbnet:Web.Services.OrderService -> vbnet:Web.Services.OrderService.Save(Order)
+rel has_type csharp:Web.Controllers.OrdersController.svc -> vbnet:Web.Services.OrderService
+rel param_type csharp:Web.Controllers.OrdersController.Post(Order) -> csharp:Web.Models.Order
+rel param_type vbnet:Web.Services.OrderService.Save(Order) -> csharp:Web.Models.Order
+rel returns csharp:Web.Controllers.OrdersController.Get(System.Int32) -> csharp:Web.Models.Order
+rel returns vbnet:Web.Services.OrderService.Find(System.Int32) -> csharp:Web.Models.Order

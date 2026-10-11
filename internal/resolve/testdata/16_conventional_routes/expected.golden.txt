@@ -1,0 +1,51 @@
+# Verwendungen, Beziehungen und Imports (sortiert)
+ref Controllers/HomeController.cs:0 http-convention ACTION home/index -> - [EXACT] in csharp:HomeController.Index()
+ref Controllers/HomeController.cs:0 http-convention ACTION home/privacy -> - [EXACT] in csharp:HomeController.Privacy()
+ref Controllers/HomeController.cs:1 inherits Controller -> - [HEURISTIC] in csharp:HomeController
+ref Controllers/HomeController.cs:3 call View -> - [HEURISTIC] in csharp:HomeController.Index()
+ref Controllers/HomeController.cs:3 type-ref IActionResult -> - [HEURISTIC] in csharp:HomeController.Index()
+ref Controllers/HomeController.cs:4 call View -> - [HEURISTIC] in csharp:HomeController.Privacy()
+ref Controllers/HomeController.cs:4 type-ref IActionResult -> - [HEURISTIC] in csharp:HomeController.Privacy()
+ref Controllers/OrdersController.cs:0 http-convention ACTION orders/details -> - [EXACT] in csharp:OrdersController.Details(System.Int32)
+ref Controllers/OrdersController.cs:0 http-convention ACTION orders/listall -> - [EXACT] in csharp:OrdersController.ListAll()
+ref Controllers/OrdersController.cs:1 http-route ANY api/legacy -> - [EXACT] in csharp:LegacyController.Items()
+ref Controllers/OrdersController.cs:1 inherits Controller -> - [HEURISTIC] in csharp:OrdersController
+ref Controllers/OrdersController.cs:11 call View -> - [HEURISTIC] in csharp:LegacyController.Items()
+ref Controllers/OrdersController.cs:11 type-ref IActionResult -> - [HEURISTIC] in csharp:LegacyController.Items()
+ref Controllers/OrdersController.cs:3 call View -> - [HEURISTIC] in csharp:OrdersController.Details(System.Int32)
+ref Controllers/OrdersController.cs:3 type-ref IActionResult -> - [HEURISTIC] in csharp:OrdersController.Details(System.Int32)
+ref Controllers/OrdersController.cs:4 call View -> - [HEURISTIC] in csharp:OrdersController.ListAll()
+ref Controllers/OrdersController.cs:4 type-ref IActionResult -> - [HEURISTIC] in csharp:OrdersController.ListAll()
+ref Controllers/OrdersController.cs:8 attribute Route -> - [HEURISTIC] in csharp:LegacyController
+ref Controllers/OrdersController.cs:9 inherits Controller -> - [HEURISTIC] in csharp:LegacyController
+ref Pages/Products/Detail.cshtml:1 http-route ANY products/{} -> - [EXACT] in csharp:Pages.Products.Detail
+ref Pages/Products/Detail.cshtml:2 type-ref DetailModel -> csharp:DetailModel [RESOLVED] in csharp:Pages.Products.Detail.Model
+ref Program.cs:1 call Create -> - [HEURISTIC] in csharp:<top-level>@Program.cs
+ref Program.cs:3 http-convention PATTERN {controller=Home}/{action=Index}/{id?} -> - [EXACT] in csharp:<top-level>@Program.cs
+ref wwwroot/app.ts:1 call fetch -> - [HEURISTIC] in tsjs:wwwroot/app.ts#product()
+ref wwwroot/app.ts:1 http-call GET products/5 -> - [HEURISTIC] in tsjs:wwwroot/app.ts#product()
+ref wwwroot/app.ts:2 call fetch -> - [HEURISTIC] in tsjs:wwwroot/app.ts#details()
+ref wwwroot/app.ts:2 http-call GET orders/details/5 -> - [HEURISTIC] in tsjs:wwwroot/app.ts#details()
+ref wwwroot/app.ts:3 call fetch -> - [HEURISTIC] in tsjs:wwwroot/app.ts#listAll()
+ref wwwroot/app.ts:3 http-call GET orders/listall -> - [HEURISTIC] in tsjs:wwwroot/app.ts#listAll()
+ref wwwroot/app.ts:4 call fetch -> - [HEURISTIC] in tsjs:wwwroot/app.ts#privacy()
+ref wwwroot/app.ts:4 http-call GET home/privacy -> - [HEURISTIC] in tsjs:wwwroot/app.ts#privacy()
+ref wwwroot/app.ts:5 call fetch -> - [HEURISTIC] in tsjs:wwwroot/app.ts#legacy()
+ref wwwroot/app.ts:5 http-call GET api/legacy/items -> - [HEURISTIC] in tsjs:wwwroot/app.ts#legacy()
+ref wwwroot/app.ts:6 call fetch -> - [HEURISTIC] in tsjs:wwwroot/app.ts#helper()
+ref wwwroot/app.ts:6 http-call GET orders/helper -> - [HEURISTIC] in tsjs:wwwroot/app.ts#helper()
+rel calls_endpoint tsjs:wwwroot/app.ts#details() -> csharp:OrdersController.Details(System.Int32)
+rel calls_endpoint tsjs:wwwroot/app.ts#listAll() -> csharp:OrdersController.ListAll()
+rel calls_endpoint tsjs:wwwroot/app.ts#privacy() -> csharp:HomeController.Privacy()
+rel calls_endpoint tsjs:wwwroot/app.ts#product() -> csharp:Pages.Products.Detail
+rel contains csharp:DetailModel -> csharp:DetailModel.Title
+rel contains csharp:HomeController -> csharp:HomeController.Index()
+rel contains csharp:HomeController -> csharp:HomeController.Privacy()
+rel contains csharp:LegacyController -> csharp:LegacyController.Items()
+rel contains csharp:OrdersController -> csharp:OrdersController.Details(System.Int32)
+rel contains csharp:OrdersController -> csharp:OrdersController.Helper()
+rel contains csharp:OrdersController -> csharp:OrdersController.ListAll()
+rel contains csharp:Pages.Products -> csharp:Pages.Products.Detail
+rel contains csharp:Pages.Products.Detail -> csharp:Pages.Products.Detail.Model
+rel contains csharp:Pages.Products.Detail -> csharp:Pages.Products.Detail.__Render()
+rel has_type csharp:Pages.Products.Detail.Model -> csharp:DetailModel

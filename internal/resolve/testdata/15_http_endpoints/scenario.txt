@@ -1,0 +1,2 @@
+SZENARIO: HTTP-Verbindung zwischen Frontend und Backend. Controller-Routen aus Attributen mit Präfix, Minimal-API-Routen und Aufrufe per fetch, axios und http-Client werden über Verb und Pfad verbunden. Mehrdeutige Pfade bleiben unverbunden.
+ABDECKUNG: Route mit Controller-Präfix [controller], absoluter Route mit führendem /, Parameter {id:int}, Minimal API MapGet, fetch mit Template und Verkettung, fetch mit method-Option, axios.post, mehrdeutige Route bleibt ohne Verbindung

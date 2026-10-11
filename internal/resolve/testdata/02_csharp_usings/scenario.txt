@@ -1,0 +1,2 @@
+SZENARIO: using-Direktiven, using static und Aliase bestimmen, welche Typen außerhalb des eigenen Namensraums gefunden werden
+ABDECKUNG: RESOLVED über using, using static, using-Alias, nicht importierter Namensraum bleibt unaufgelöst oder HEURISTIC

@@ -1,0 +1,2 @@
+SZENARIO: partial-Klassen über zwei Dateien hinweg, Vererbung und Interface-Implementierung werden zu Beziehungen, Typen von Feldern und Parametern zu has_type und param_type
+ABDECKUNG: partial über Dateien, inherits, implements, has_type, param_type, returns, attribute_of

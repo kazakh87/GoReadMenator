@@ -1,0 +1,14 @@
+file loc=6 filedoc=""
+sym tsjs:src/11_broken.ts#Broken kind=class name=Broken fqn=src/11_broken.ts#Broken sig="class Broken" doc=inline
+sym tsjs:src/11_broken.ts#Broken.method() kind=method name=method fqn=src/11_broken.ts#Broken.method container=tsjs:src/11_broken.ts#Broken sig="method()"
+sym tsjs:src/11_broken.ts#ok() kind=function name=ok fqn=src/11_broken.ts#ok mods=export sig="export ok(): number"
+sym tsjs:src/11_broken.ts#t kind=variable name=t fqn=src/11_broken.ts#t doc=inline
+loc tsjs:src/11_broken.ts#Broken decl 4:7-6:3
+loc tsjs:src/11_broken.ts#Broken.method() decl 5:3-5:20
+loc tsjs:src/11_broken.ts#ok() decl 7:17-7:42
+loc tsjs:src/11_broken.ts#t decl 8:7-8:24
+# ref: keine
+rel contains tsjs:src/11_broken.ts#Broken -> tsjs:src/11_broken.ts#Broken.method()
+imp esm "x"
+diag 4:7 Klassen-Körper nicht geschlossen
+diag 5:9 Parameterliste nicht geschlossen

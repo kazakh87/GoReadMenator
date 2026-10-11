@@ -1,0 +1,50 @@
+file loc=17 filedoc=""
+sym tsjs:src/04_interfaces_types_enums.ts#Dir kind=enum name=Dir fqn=src/04_interfaces_types_enums.ts#Dir mods=export doc=inline
+sym tsjs:src/04_interfaces_types_enums.ts#Dir.Down kind=field name=Down fqn=src/04_interfaces_types_enums.ts#Dir.Down container=tsjs:src/04_interfaces_types_enums.ts#Dir
+sym tsjs:src/04_interfaces_types_enums.ts#Dir.Up kind=field name=Up fqn=src/04_interfaces_types_enums.ts#Dir.Up container=tsjs:src/04_interfaces_types_enums.ts#Dir
+sym tsjs:src/04_interfaces_types_enums.ts#Maybe kind=type name=Maybe fqn=src/04_interfaces_types_enums.ts#Maybe mods=export sig="type Maybe" doc=inline
+sym tsjs:src/04_interfaces_types_enums.ts#Pair kind=type name=Pair fqn=src/04_interfaces_types_enums.ts#Pair mods=export sig="type Pair" doc=inline
+sym tsjs:src/04_interfaces_types_enums.ts#Repo kind=interface name=Repo fqn=src/04_interfaces_types_enums.ts#Repo mods=export sig="interface Repo" doc=inline
+sym tsjs:src/04_interfaces_types_enums.ts#Repo.find(string) kind=method name=find fqn=src/04_interfaces_types_enums.ts#Repo.find container=tsjs:src/04_interfaces_types_enums.ts#Repo sig="find(id: string): T|undefined"
+sym tsjs:src/04_interfaces_types_enums.ts#Repo.id kind=property name=id fqn=src/04_interfaces_types_enums.ts#Repo.id container=tsjs:src/04_interfaces_types_enums.ts#Repo mods=readonly sig="id: string" doc=inline
+sym tsjs:src/04_interfaces_types_enums.ts#Repo.save(T) kind=method name=save fqn=src/04_interfaces_types_enums.ts#Repo.save container=tsjs:src/04_interfaces_types_enums.ts#Repo sig="save(item: T): void"
+sym tsjs:src/04_interfaces_types_enums.ts#Status kind=enum name=Status fqn=src/04_interfaces_types_enums.ts#Status mods=export doc=inline
+sym tsjs:src/04_interfaces_types_enums.ts#Status.Closed kind=field name=Closed fqn=src/04_interfaces_types_enums.ts#Status.Closed container=tsjs:src/04_interfaces_types_enums.ts#Status
+sym tsjs:src/04_interfaces_types_enums.ts#Status.Open kind=field name=Open fqn=src/04_interfaces_types_enums.ts#Status.Open container=tsjs:src/04_interfaces_types_enums.ts#Status
+sym tsjs:src/04_interfaces_types_enums.ts#Status.Other kind=field name=Other fqn=src/04_interfaces_types_enums.ts#Status.Other container=tsjs:src/04_interfaces_types_enums.ts#Status
+sym tsjs:src/04_interfaces_types_enums.ts#legacy-lib kind=module name=legacy-lib fqn=src/04_interfaces_types_enums.ts#legacy-lib mods=declare doc=inline
+sym tsjs:src/04_interfaces_types_enums.ts#legacy-lib.legacy() kind=function name=legacy fqn=src/04_interfaces_types_enums.ts#legacy-lib.legacy container=tsjs:src/04_interfaces_types_enums.ts#legacy-lib mods=export sig="export legacy(): void"
+sym tsjs:src/04_interfaces_types_enums.ts#util kind=namespace name=util fqn=src/04_interfaces_types_enums.ts#util mods=export doc=inline
+sym tsjs:src/04_interfaces_types_enums.ts#util.assertNever(never) kind=function name=assertNever fqn=src/04_interfaces_types_enums.ts#util.assertNever container=tsjs:src/04_interfaces_types_enums.ts#util mods=export sig="export assertNever(x: never): never"
+loc tsjs:src/04_interfaces_types_enums.ts#Dir decl 13:19-13:34
+loc tsjs:src/04_interfaces_types_enums.ts#Dir.Down decl 13:29-13:32
+loc tsjs:src/04_interfaces_types_enums.ts#Dir.Up decl 13:25-13:26
+loc tsjs:src/04_interfaces_types_enums.ts#Maybe decl 10:13-10:33
+loc tsjs:src/04_interfaces_types_enums.ts#Pair decl 9:13-9:57
+loc tsjs:src/04_interfaces_types_enums.ts#Repo decl 3:18-7:1
+loc tsjs:src/04_interfaces_types_enums.ts#Repo.find(string) decl 6:3-6:35
+loc tsjs:src/04_interfaces_types_enums.ts#Repo.id decl 5:12-5:21
+loc tsjs:src/04_interfaces_types_enums.ts#Repo.save(T) decl 4:3-4:22
+loc tsjs:src/04_interfaces_types_enums.ts#Status decl 12:13-12:52
+loc tsjs:src/04_interfaces_types_enums.ts#Status.Closed decl 12:32-12:37
+loc tsjs:src/04_interfaces_types_enums.ts#Status.Open decl 12:22-12:29
+loc tsjs:src/04_interfaces_types_enums.ts#Status.Other decl 12:40-12:50
+loc tsjs:src/04_interfaces_types_enums.ts#legacy-lib decl 21:16-23:1
+loc tsjs:src/04_interfaces_types_enums.ts#legacy-lib.legacy() decl 22:19-22:33
+loc tsjs:src/04_interfaces_types_enums.ts#util decl 15:18-19:1
+loc tsjs:src/04_interfaces_types_enums.ts#util.assertNever(never) decl 16:19-18:3
+ref construct target="Error" at=17:15-17:19 conf=HEURISTIC in=tsjs:src/04_interfaces_types_enums.ts#util.assertNever(never) arity=1
+ref inherits target="Reader" at=3:34-3:39 conf=HEURISTIC in=tsjs:src/04_interfaces_types_enums.ts#Repo
+ref inherits target="Writer" at=3:42-3:47 conf=HEURISTIC in=tsjs:src/04_interfaces_types_enums.ts#Repo
+rel contains tsjs:src/04_interfaces_types_enums.ts#Dir -> tsjs:src/04_interfaces_types_enums.ts#Dir.Down
+rel contains tsjs:src/04_interfaces_types_enums.ts#Dir -> tsjs:src/04_interfaces_types_enums.ts#Dir.Up
+rel contains tsjs:src/04_interfaces_types_enums.ts#Repo -> tsjs:src/04_interfaces_types_enums.ts#Repo.find(string)
+rel contains tsjs:src/04_interfaces_types_enums.ts#Repo -> tsjs:src/04_interfaces_types_enums.ts#Repo.id
+rel contains tsjs:src/04_interfaces_types_enums.ts#Repo -> tsjs:src/04_interfaces_types_enums.ts#Repo.save(T)
+rel contains tsjs:src/04_interfaces_types_enums.ts#Status -> tsjs:src/04_interfaces_types_enums.ts#Status.Closed
+rel contains tsjs:src/04_interfaces_types_enums.ts#Status -> tsjs:src/04_interfaces_types_enums.ts#Status.Open
+rel contains tsjs:src/04_interfaces_types_enums.ts#Status -> tsjs:src/04_interfaces_types_enums.ts#Status.Other
+rel contains tsjs:src/04_interfaces_types_enums.ts#legacy-lib -> tsjs:src/04_interfaces_types_enums.ts#legacy-lib.legacy()
+rel contains tsjs:src/04_interfaces_types_enums.ts#util -> tsjs:src/04_interfaces_types_enums.ts#util.assertNever(never)
+# imp: keine
+# diag: keine

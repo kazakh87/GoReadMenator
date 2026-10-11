@@ -1,0 +1,5 @@
+api {"scope":"App.Big.","budget_tokens":200}
+api {"scope":"App.Big.","budget_tokens":200,"cursor":"$NEXT"}
+api {"scope":"App.Big.","budget_tokens":200,"cursor":"$NEXT"}
+api {"scope":"App.Big.","budget_tokens":1,"cursor":""}
+find_symbols {"q":"Run","limit":3}

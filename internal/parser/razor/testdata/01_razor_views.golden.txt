@@ -1,0 +1,20 @@
+file loc=11 filedoc=""
+sym csharp:Pages kind=namespace name=Pages fqn=Pages
+sym csharp:Pages._01_razor_views kind=class name=_01_razor_views fqn=Pages._01_razor_views container=csharp:Pages mods=partial sig="partial class _01_razor_views"
+sym csharp:Pages._01_razor_views.Model kind=field name=Model fqn=Pages._01_razor_views.Model container=csharp:Pages._01_razor_views mods=public
+sym csharp:Pages._01_razor_views.Pricing kind=field name=Pricing fqn=Pages._01_razor_views.Pricing container=csharp:Pages._01_razor_views mods=public
+sym csharp:Pages._01_razor_views.__Render() kind=method name=__Render fqn=Pages._01_razor_views.__Render container=csharp:Pages._01_razor_views mods=private sig="private void __Render()"
+loc csharp:Pages decl 1:11-1:1
+loc csharp:Pages._01_razor_views partial 1:15-1:1
+loc csharp:Pages._01_razor_views.Model decl 4:14-4:19
+loc csharp:Pages._01_razor_views.Pricing decl 5:17-5:24
+loc csharp:Pages._01_razor_views.__Render() decl 1:14-1:1
+ref call target="Format" at=8:27-8:32 conf=HEURISTIC in=csharp:Pages._01_razor_views.__Render() arity=1 qual=Pricing
+ref type-ref target="IPricing" at=5:8-5:15 conf=HEURISTIC in=csharp:Pages._01_razor_views.Pricing role=has-type
+ref type-ref target="Order" at=4:8-4:12 conf=HEURISTIC in=csharp:Pages._01_razor_views.Model role=has-type
+rel contains csharp:Pages -> csharp:Pages._01_razor_views
+rel contains csharp:Pages._01_razor_views -> csharp:Pages._01_razor_views.Model
+rel contains csharp:Pages._01_razor_views -> csharp:Pages._01_razor_views.Pricing
+rel contains csharp:Pages._01_razor_views -> csharp:Pages._01_razor_views.__Render()
+imp using "Shop.Models"
+# diag: keine

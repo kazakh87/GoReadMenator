@@ -1,0 +1,2 @@
+SZENARIO: VB.NET ist nicht case-sensitiv. Verwendungen in anderer Schreibweise als die Deklaration werden trotzdem aufgelöst. Ein C#-Typ ist aus VB sichtbar (gleiche .NET-Familie).
+ABDECKUNG: Erzeugung mit anderer Schreibweise über Import, Import eines Namensraums in anderer Schreibweise, Alias-Import, Aufruf über lokale Variable bleibt HEURISTIC, Aufruf auf C#-Typ über Qualifier wird EXACT aufgelöst

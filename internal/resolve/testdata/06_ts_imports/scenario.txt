@@ -1,0 +1,2 @@
+SZENARIO: TypeScript-Imports über Dateigrenzen: benannte Importe, Alias, Default-Export, Namespace-Import mit Qualifier
+ABDECKUNG: EXACT über Import-Bindung, Alias, default export, Qualifier über Namespace-Import, externes Paket bleibt unaufgelöst

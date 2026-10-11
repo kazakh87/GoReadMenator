@@ -1,0 +1,2 @@
+SZENARIO: Beziehungen, Verwendungen und das Kontextpaket. Quelltext nur ausschnittsweise und begrenzt. Unbekannte Eingaben liefern verständliche Fehler.
+ABDECKUNG: neighborhood mit Tiefe und Beziehungsart, usages mit Tiefe 2, context im Budget, source mit Zeilenlimit, source für unbekannte Datei, unbekanntes Symbol

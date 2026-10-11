@@ -1,0 +1,12 @@
+file loc=5 filedoc=""
+sym vbnet:Größe kind=namespace name=Größe fqn=Größe
+sym vbnet:Größe.Maß kind=class name=Maß fqn=Größe.Maß container=vbnet:Größe mods=public sig="public class Maß"
+sym vbnet:Größe.Maß.Länge kind=property name=Länge fqn=Größe.Maß.Länge container=vbnet:Größe.Maß mods=public sig="public property Länge() As Integer"
+loc vbnet:Größe decl 3:11-7:13
+loc vbnet:Größe.Maß decl 4:18-6:13
+loc vbnet:Größe.Maß.Länge decl 5:25-5:41
+# ref: keine
+rel contains vbnet:Größe -> vbnet:Größe.Maß
+rel contains vbnet:Größe.Maß -> vbnet:Größe.Maß.Länge
+# imp: keine
+# diag: keine

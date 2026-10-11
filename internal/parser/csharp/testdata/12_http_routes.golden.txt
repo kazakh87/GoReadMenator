@@ -1,0 +1,51 @@
+file loc=23 filedoc=""
+sym csharp:Web.Controllers kind=namespace name=Controllers fqn=Web.Controllers
+sym csharp:Web.Controllers.OrdersController kind=class name=OrdersController fqn=Web.Controllers.OrdersController container=csharp:Web.Controllers mods=public sig="public class OrdersController"
+sym csharp:Web.Controllers.OrdersController.Create() kind=method name=Create fqn=Web.Controllers.OrdersController.Create container=csharp:Web.Controllers.OrdersController mods=public sig="public IActionResult Create()"
+sym csharp:Web.Controllers.OrdersController.Get(System.Int32) kind=method name=Get fqn=Web.Controllers.OrdersController.Get container=csharp:Web.Controllers.OrdersController mods=public sig="public IActionResult Get(int id)"
+sym csharp:Web.Controllers.OrdersController.List() kind=method name=List fqn=Web.Controllers.OrdersController.List container=csharp:Web.Controllers.OrdersController mods=public sig="public IActionResult List()"
+sym csharp:Web.Controllers.ReportsController kind=class name=ReportsController fqn=Web.Controllers.ReportsController container=csharp:Web.Controllers mods=public sig="public class ReportsController"
+sym csharp:Web.Controllers.ReportsController.Summary() kind=method name=Summary fqn=Web.Controllers.ReportsController.Summary container=csharp:Web.Controllers.ReportsController mods=public sig="public IActionResult Summary()"
+sym csharp:Web.Controllers.Routes kind=class name=Routes fqn=Web.Controllers.Routes container=csharp:Web.Controllers mods=public,static sig="public static class Routes"
+sym csharp:Web.Controllers.Routes.Map(WebApplication) kind=method name=Map fqn=Web.Controllers.Routes.Map container=csharp:Web.Controllers.Routes mods=public,static sig="public static void Map(WebApplication app)"
+loc csharp:Web.Controllers decl 3:11-3:26
+loc csharp:Web.Controllers.OrdersController decl 7:14-17:1
+loc csharp:Web.Controllers.OrdersController.Create() decl 16:26-16:42
+loc csharp:Web.Controllers.OrdersController.Get(System.Int32) decl 13:26-13:45
+loc csharp:Web.Controllers.OrdersController.List() decl 10:26-10:40
+loc csharp:Web.Controllers.ReportsController decl 19:14-23:1
+loc csharp:Web.Controllers.ReportsController.Summary() decl 22:26-22:43
+loc csharp:Web.Controllers.Routes decl 25:21-31:1
+loc csharp:Web.Controllers.Routes.Map(WebApplication) decl 27:24-30:5
+ref attribute target="HttpGet" at=12:6-12:12 conf=HEURISTIC in=csharp:Web.Controllers.OrdersController.Get(System.Int32)
+ref attribute target="HttpGet" at=21:6-21:12 conf=HEURISTIC in=csharp:Web.Controllers.ReportsController.Summary()
+ref attribute target="HttpGet" at=9:6-9:12 conf=HEURISTIC in=csharp:Web.Controllers.OrdersController.List()
+ref attribute target="HttpPost" at=15:6-15:13 conf=HEURISTIC in=csharp:Web.Controllers.OrdersController.Create()
+ref attribute target="Route" at=6:2-6:6 conf=HEURISTIC in=csharp:Web.Controllers.OrdersController
+ref call target="MapGet" at=29:13-29:18 conf=HEURISTIC in=csharp:Web.Controllers.Routes.Map(WebApplication) arity=2 qual=app
+ref call target="Ok" at=10:36-10:37 conf=HEURISTIC in=csharp:Web.Controllers.OrdersController.List()
+ref call target="Ok" at=13:41-13:42 conf=HEURISTIC in=csharp:Web.Controllers.OrdersController.Get(System.Int32)
+ref call target="Ok" at=16:38-16:39 conf=HEURISTIC in=csharp:Web.Controllers.OrdersController.Create()
+ref call target="Ok" at=22:39-22:40 conf=HEURISTIC in=csharp:Web.Controllers.ReportsController.Summary()
+ref http-route target="GET api/health" at=29:13-29:18 conf=EXACT in=csharp:Web.Controllers.Routes.Map(WebApplication)
+ref http-route target="GET api/orders" at=9:6-9:12 conf=EXACT in=csharp:Web.Controllers.OrdersController.List()
+ref http-route target="GET api/orders/{}" at=12:6-12:12 conf=EXACT in=csharp:Web.Controllers.OrdersController.Get(System.Int32)
+ref http-route target="GET api/reports/summary" at=21:6-21:12 conf=EXACT in=csharp:Web.Controllers.ReportsController.Summary()
+ref http-route target="POST api/orders" at=15:6-15:13 conf=EXACT in=csharp:Web.Controllers.OrdersController.Create()
+ref inherits target="ControllerBase" at=19:34-19:47 conf=HEURISTIC in=csharp:Web.Controllers.ReportsController
+ref inherits target="ControllerBase" at=7:33-7:46 conf=HEURISTIC in=csharp:Web.Controllers.OrdersController
+ref type-ref target="IActionResult" at=10:12-10:24 conf=HEURISTIC in=csharp:Web.Controllers.OrdersController.List() role=returns
+ref type-ref target="IActionResult" at=13:12-13:24 conf=HEURISTIC in=csharp:Web.Controllers.OrdersController.Get(System.Int32) role=returns
+ref type-ref target="IActionResult" at=16:12-16:24 conf=HEURISTIC in=csharp:Web.Controllers.OrdersController.Create() role=returns
+ref type-ref target="IActionResult" at=22:12-22:24 conf=HEURISTIC in=csharp:Web.Controllers.ReportsController.Summary() role=returns
+ref type-ref target="WebApplication" at=27:28-27:41 conf=HEURISTIC in=csharp:Web.Controllers.Routes.Map(WebApplication) role=param-type
+rel contains csharp:Web.Controllers -> csharp:Web.Controllers.OrdersController
+rel contains csharp:Web.Controllers -> csharp:Web.Controllers.ReportsController
+rel contains csharp:Web.Controllers -> csharp:Web.Controllers.Routes
+rel contains csharp:Web.Controllers.OrdersController -> csharp:Web.Controllers.OrdersController.Create()
+rel contains csharp:Web.Controllers.OrdersController -> csharp:Web.Controllers.OrdersController.Get(System.Int32)
+rel contains csharp:Web.Controllers.OrdersController -> csharp:Web.Controllers.OrdersController.List()
+rel contains csharp:Web.Controllers.ReportsController -> csharp:Web.Controllers.ReportsController.Summary()
+rel contains csharp:Web.Controllers.Routes -> csharp:Web.Controllers.Routes.Map(WebApplication)
+# imp: keine
+# diag: keine

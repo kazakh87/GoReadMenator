@@ -1,0 +1,15 @@
+file loc=7 filedoc=""
+sym csharp:Shop kind=namespace name=Shop fqn=Shop
+sym csharp:Shop.After kind=class name=After fqn=Shop.After container=csharp:Shop mods=public sig="public class After"
+sym csharp:Shop.Half kind=class name=Half fqn=Shop.Half container=csharp:Shop mods=public sig="public class Half"
+sym csharp:Shop.Half.Ok() kind=method name=Ok fqn=Shop.Half.Ok container=csharp:Shop.Half mods=public sig="public void Ok()"
+loc csharp:Shop decl 3:11-3:15
+loc csharp:Shop.After decl 11:14-11:22
+loc csharp:Shop.Half decl 5:14-9:1
+loc csharp:Shop.Half.Ok() decl 7:17-7:24
+# ref: keine
+rel contains csharp:Shop -> csharp:Shop.After
+rel contains csharp:Shop -> csharp:Shop.Half
+rel contains csharp:Shop.Half -> csharp:Shop.Half.Ok()
+# imp: keine
+diag 8:16 Parameterliste nicht geschlossen

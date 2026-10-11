@@ -1,0 +1,12 @@
+file loc=5 filedoc=""
+sym csharp:Shop kind=namespace name=Shop fqn=Shop
+sym csharp:Shop.Größe kind=class name=Größe fqn=Shop.Größe container=csharp:Shop mods=public sig="public class Größe"
+sym csharp:Shop.Größe.Breite kind=property name=Breite fqn=Shop.Größe.Breite container=csharp:Shop.Größe mods=public
+loc csharp:Shop decl 3:11-3:15
+loc csharp:Shop.Größe decl 4:14-7:1
+loc csharp:Shop.Größe.Breite decl 6:16-6:35
+# ref: keine
+rel contains csharp:Shop -> csharp:Shop.Größe
+rel contains csharp:Shop.Größe -> csharp:Shop.Größe.Breite
+# imp: keine
+# diag: keine

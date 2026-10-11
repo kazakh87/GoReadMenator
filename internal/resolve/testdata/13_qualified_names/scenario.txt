@@ -1,0 +1,2 @@
+SZENARIO: Qualifizierte Typnamen werden als Ganzes aufgelöst. Zwei Typen mit gleichem Namen in verschiedenen Namensräumen sind durch den Namensraum eindeutig. Relative Namen werden vom innersten Namensraum nach außen gesucht.
+ABDECKUNG: vollqualifizierter Typ EXACT, relativer Name über den umgebenden Namensraum EXACT, gleichnamige Typen in zwei Namensräumen, Generic mit qualifiziertem Namen

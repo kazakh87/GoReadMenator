@@ -1,0 +1,21 @@
+file loc=16 filedoc=""
+sym vbnet:Shop kind=namespace name=Shop fqn=Shop
+sym vbnet:Shop.Ledger kind=class name=Ledger fqn=Shop.Ledger container=vbnet:Shop mods=partial,friend sig="partial friend class Ledger"
+sym vbnet:Shop.Ledger.Post() kind=method name=Post fqn=Shop.Ledger.Post container=vbnet:Shop.Ledger mods=public sig="public sub Post()"
+sym vbnet:Shop.Order kind=class name=Order fqn=Shop.Order container=vbnet:Shop mods=public sig="public class Order"
+sym vbnet:Shop.Order.Line kind=class name=Line fqn=Shop.Order.Line container=vbnet:Shop.Order mods=public sig="public class Line"
+loc vbnet:Shop decl 3:11-22:13
+loc vbnet:Shop.Ledger partial 15:26-16:13
+loc vbnet:Shop.Ledger partial 18:26-21:13
+loc vbnet:Shop.Ledger.Post() decl 19:20-20:15
+loc vbnet:Shop.Order decl 7:18-13:13
+loc vbnet:Shop.Order.Line decl 11:22-12:17
+ref implements target="IDisposable" at=9:29-9:39 conf=HEURISTIC in=vbnet:Shop.Order
+ref implements target="IPriced" at=9:20-9:26 conf=HEURISTIC in=vbnet:Shop.Order
+ref inherits target="Entity" at=8:18-8:23 conf=HEURISTIC in=vbnet:Shop.Order
+rel contains vbnet:Shop -> vbnet:Shop.Ledger
+rel contains vbnet:Shop -> vbnet:Shop.Order
+rel contains vbnet:Shop.Ledger -> vbnet:Shop.Ledger.Post()
+rel contains vbnet:Shop.Order -> vbnet:Shop.Order.Line
+# imp: keine
+# diag: keine

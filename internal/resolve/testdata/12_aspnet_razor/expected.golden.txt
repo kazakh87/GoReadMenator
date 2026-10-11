@@ -1,0 +1,17 @@
+# Verwendungen, Beziehungen und Imports (sortiert)
+imp Pages/Index.cshtml using "Shop.Services" -> extern
+ref Pages/Index.cshtml:2 type-ref Shop.Models.Order -> csharp:Shop.Models.Order [EXACT] in csharp:Pages.Index.Model
+ref Pages/Index.cshtml:3 type-ref IPricing -> csharp:Shop.Services.IPricing [RESOLVED] in csharp:Pages.Index.Pricing
+ref Pages/Index.cshtml:5 call Format -> csharp:Shop.Services.IPricing.Format(System.Decimal) [EXACT] in csharp:Pages.Index.__Render()
+ref Pages/Index.cshtml:8 call Format -> csharp:Shop.Services.IPricing.Format(System.Decimal) [EXACT] in csharp:Pages.Index.Label()
+rel contains csharp:Pages -> csharp:Pages.Index
+rel contains csharp:Pages.Index -> csharp:Pages.Index.Label()
+rel contains csharp:Pages.Index -> csharp:Pages.Index.Model
+rel contains csharp:Pages.Index -> csharp:Pages.Index.Pricing
+rel contains csharp:Pages.Index -> csharp:Pages.Index.__Render()
+rel contains csharp:Shop.Models -> csharp:Shop.Models.Order
+rel contains csharp:Shop.Models.Order -> csharp:Shop.Models.Order.Total
+rel contains csharp:Shop.Services -> csharp:Shop.Services.IPricing
+rel contains csharp:Shop.Services.IPricing -> csharp:Shop.Services.IPricing.Format(System.Decimal)
+rel has_type csharp:Pages.Index.Model -> csharp:Shop.Models.Order
+rel has_type csharp:Pages.Index.Pricing -> csharp:Shop.Services.IPricing

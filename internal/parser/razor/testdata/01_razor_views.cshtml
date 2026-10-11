@@ -1,0 +1,10 @@
+@* SZENARIO: Razor-Ansicht mit Direktiven, Modell, Einfügung und Ausdrücken im HTML. Der HTML-Teil darf keine Symbole erzeugen.
+   ABDECKUNG: @using, @model, @inject, @-Ausdruck mit Eigenschaft, @(...)-Ausdruck, Methodenaufruf im HTML, @@-Escape, HTML mit Attributen *@
+@using Shop.Models
+@model Order
+@inject IPricing Pricing
+
+<h1>@Model.Title</h1>
+<p class="total">@Pricing.Format(Model.Total)</p>
+<p>E-Mail: user@@example.com</p>
+<span>@(Model.Items.Count + 1)</span>

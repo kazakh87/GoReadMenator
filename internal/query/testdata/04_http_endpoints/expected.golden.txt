@@ -1,0 +1,85 @@
+## endpoints {}
+{
+  "items": [
+    {
+      "route": "DELETE api/cache/{}",
+      "action": "\u003ctop-level\u003e@Program.cs",
+      "file": "Program.cs",
+      "line": 4,
+      "callers": [
+        "wwwroot/orders.ts#clearCache",
+        "wwwroot/orders.ts#health"
+      ]
+    },
+    {
+      "route": "GET api/health",
+      "action": "\u003ctop-level\u003e@Program.cs",
+      "file": "Program.cs",
+      "line": 3,
+      "callers": [
+        "wwwroot/orders.ts#clearCache",
+        "wwwroot/orders.ts#health"
+      ]
+    },
+    {
+      "route": "GET api/orders",
+      "action": "Web.Controllers.OrdersController.List",
+      "file": "Controllers/OrdersController.cs",
+      "line": 8,
+      "callers": [
+        "wwwroot/orders.ts#loadOrders"
+      ]
+    },
+    {
+      "route": "GET api/orders/{}",
+      "action": "Web.Controllers.OrdersController.Get",
+      "file": "Controllers/OrdersController.cs",
+      "line": 11,
+      "callers": [
+        "wwwroot/orders.ts#loadOrder",
+        "wwwroot/orders.ts#loadOrderTpl"
+      ]
+    },
+    {
+      "route": "GET api/reports/summary",
+      "action": "Web.Controllers.ReportsController.Summary",
+      "file": "Controllers/OrdersController.cs",
+      "line": 20,
+      "callers": [
+        "wwwroot/orders.ts#reports"
+      ]
+    },
+    {
+      "route": "GET api/shared/item",
+      "action": "Web.Controllers.ArchiveController.ItemB",
+      "file": "Controllers/OrdersController.cs",
+      "line": 29
+    },
+    {
+      "route": "GET api/shared/item",
+      "action": "Web.Controllers.ReportsController.ItemA",
+      "file": "Controllers/OrdersController.cs",
+      "line": 23
+    },
+    {
+      "route": "POST api/orders",
+      "action": "Web.Controllers.OrdersController.Create",
+      "file": "Controllers/OrdersController.cs",
+      "line": 14,
+      "callers": [
+        "wwwroot/orders.ts#createOrder"
+      ]
+    }
+  ],
+  "total": 8
+}
+
+## status {}
+{
+  "head": "<SHA>",
+  "indexedCommit": "<SHA>",
+  "upToDate": true,
+  "symbols": 20,
+  "references": 49
+}
+

@@ -1,0 +1,29 @@
+file loc=14 filedoc=""
+sym csharp:Shop kind=namespace name=Shop fqn=Shop
+sym csharp:Shop.Hidden kind=class name=Hidden fqn=Shop.Hidden container=csharp:Shop mods=file sig="file class Hidden"
+sym csharp:Shop.Hidden.Run() kind=method name=Run fqn=Shop.Hidden.Run container=csharp:Shop.Hidden mods=public sig="public void Run()"
+sym csharp:Shop.Order kind=record name=Order fqn=Shop.Order container=csharp:Shop mods=public sig="public record Order"
+sym csharp:Shop.Plain kind=class name=Plain fqn=Shop.Plain container=csharp:Shop mods=public sig="public class Plain"
+sym csharp:Shop.Plain.Go() kind=method name=Go fqn=Shop.Plain.Go container=csharp:Shop.Plain mods=public sig="public void Go()"
+sym csharp:Shop.Point kind=class name=Point fqn=Shop.Point container=csharp:Shop mods=public sig="public class Point"
+sym csharp:Shop.Point.Sum() kind=method name=Sum fqn=Shop.Point.Sum container=csharp:Shop.Point mods=public sig="public int Sum()"
+loc csharp:Shop decl 3:11-3:15
+loc csharp:Shop.Hidden decl 13:12-16:1
+loc csharp:Shop.Hidden.Run() decl 15:17-15:25
+loc csharp:Shop.Order decl 11:15-11:45
+loc csharp:Shop.Plain decl 18:14-21:1
+loc csharp:Shop.Plain.Go() decl 20:17-20:24
+loc csharp:Shop.Point decl 6:14-9:1
+loc csharp:Shop.Point.Sum() decl 8:16-8:30
+# ref: keine
+rel contains csharp:Shop -> csharp:Shop.Hidden
+rel contains csharp:Shop -> csharp:Shop.Order
+rel contains csharp:Shop -> csharp:Shop.Plain
+rel contains csharp:Shop -> csharp:Shop.Point
+rel contains csharp:Shop.Hidden -> csharp:Shop.Hidden.Run()
+rel contains csharp:Shop.Plain -> csharp:Shop.Plain.Go()
+rel contains csharp:Shop.Point -> csharp:Shop.Point.Sum()
+# imp: keine
+warn 11:8 Positionsparameter eines Records (C# 9): die Parameter werden nicht als Symbole erfasst
+warn 13:1 file-lokaler Typ (C# 11): der Typ wird erfasst und mit dem Modifikator file gespeichert, die Begrenzung auf die Datei wird aber nicht geprüft
+warn 6:8 primärer Konstruktor (C# 12): die Parameter werden nicht als Symbole erfasst

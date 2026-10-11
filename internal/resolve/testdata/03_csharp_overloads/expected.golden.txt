@@ -1,0 +1,10 @@
+# Verwendungen, Beziehungen und Imports (sortiert)
+ref Calc.cs:12 call Add -> csharp:Calc.Math2.Add(System.Int32) [EXACT] in csharp:Calc.Math2.Run()
+ref Calc.cs:13 call Add -> csharp:Calc.Math2.Add(System.Int32,System.Int32) [EXACT] in csharp:Calc.Math2.Run()
+ref Calc.cs:14 call Mix -> - [HEURISTIC] in csharp:Calc.Math2.Run()
+rel contains csharp:Calc -> csharp:Calc.Math2
+rel contains csharp:Calc.Math2 -> csharp:Calc.Math2.Add(System.Int32)
+rel contains csharp:Calc.Math2 -> csharp:Calc.Math2.Add(System.Int32,System.Int32)
+rel contains csharp:Calc.Math2 -> csharp:Calc.Math2.Mix(System.Int32)
+rel contains csharp:Calc.Math2 -> csharp:Calc.Math2.Mix(System.String)
+rel contains csharp:Calc.Math2 -> csharp:Calc.Math2.Run()

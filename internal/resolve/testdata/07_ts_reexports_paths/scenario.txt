@@ -1,0 +1,2 @@
+SZENARIO: Re-Exporte über Barrel-Dateien und Pfad-Aliase aus tsconfig.json (mit Kommentaren und nachgestellten Kommas)
+ABDECKUNG: export * from, export { a as b } from, tsconfig paths mit Stern, baseUrl, Kommentare in JSON

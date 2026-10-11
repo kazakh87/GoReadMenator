@@ -1,0 +1,37 @@
+file loc=19 filedoc=""
+sym csharp:Shop kind=namespace name=Shop fqn=Shop
+sym csharp:Shop.Client kind=class name=Client fqn=Shop.Client container=csharp:Shop mods=public sig="public class Client"
+sym csharp:Shop.Client.Helper(T) kind=method name=Helper fqn=Shop.Client.Helper container=csharp:Shop.Client mods=private,static sig="private static T Helper(T value)"
+sym csharp:Shop.Client.Load(System.Int32,Filter) kind=method name=Load fqn=Shop.Client.Load container=csharp:Shop.Client mods=public sig="public Order Load(int id, Filter filter)"
+sym csharp:Shop.Client.Log(System.Int32) kind=method name=Log fqn=Shop.Client.Log container=csharp:Shop.Client mods=private sig="private void Log(int a)"
+sym csharp:Shop.Client.Log(System.Int32,System.String,System.Boolean) kind=method name=Log fqn=Shop.Client.Log container=csharp:Shop.Client mods=private sig="private void Log(int a, string b, bool c)"
+sym csharp:Shop.Client._count kind=field name=_count fqn=Shop.Client._count container=csharp:Shop.Client mods=private
+sym csharp:Shop.Client._repo kind=field name=_repo fqn=Shop.Client._repo container=csharp:Shop.Client mods=private
+loc csharp:Shop decl 3:11-3:15
+loc csharp:Shop.Client decl 5:14-24:1
+loc csharp:Shop.Client.Helper(T) decl 23:22-23:49
+loc csharp:Shop.Client.Load(System.Int32,Filter) decl 10:18-19:5
+loc csharp:Shop.Client.Log(System.Int32) decl 22:18-22:31
+loc csharp:Shop.Client.Log(System.Int32,System.String,System.Boolean) decl 21:18-21:49
+loc csharp:Shop.Client._count decl 8:17-8:23
+loc csharp:Shop.Client._repo decl 7:18-7:23
+ref call target="Helper" at=16:9-16:14 conf=HEURISTIC in=csharp:Shop.Client.Load(System.Int32,Filter) arity=1
+ref call target="Log" at=17:9-17:11 conf=HEURISTIC in=csharp:Shop.Client.Load(System.Int32,Filter) arity=3
+ref call target="Save" at=15:15-15:18 conf=HEURISTIC in=csharp:Shop.Client.Load(System.Int32,Filter) arity=1 qual=_repo
+ref construct target="Order" at=12:21-12:25 conf=HEURISTIC in=csharp:Shop.Client.Load(System.Int32,Filter) arity=2
+ref type-ref target="Filter" at=10:31-10:36 conf=HEURISTIC in=csharp:Shop.Client.Load(System.Int32,Filter) role=param-type
+ref type-ref target="Order" at=10:12-10:16 conf=HEURISTIC in=csharp:Shop.Client.Load(System.Int32,Filter) role=returns
+ref type-ref target="Repo" at=7:13-7:16 conf=HEURISTIC in=csharp:Shop.Client._repo role=has-type
+ref type-ref target="T" at=23:20-23:20 conf=HEURISTIC in=csharp:Shop.Client.Helper(T) role=returns
+ref type-ref target="T" at=23:32-23:32 conf=HEURISTIC in=csharp:Shop.Client.Helper(T) role=param-type
+ref write target="_count" at=13:9-13:14 conf=HEURISTIC in=csharp:Shop.Client.Load(System.Int32,Filter)
+ref write target="_count" at=14:14-14:19 conf=HEURISTIC in=csharp:Shop.Client.Load(System.Int32,Filter)
+rel contains csharp:Shop -> csharp:Shop.Client
+rel contains csharp:Shop.Client -> csharp:Shop.Client.Helper(T)
+rel contains csharp:Shop.Client -> csharp:Shop.Client.Load(System.Int32,Filter)
+rel contains csharp:Shop.Client -> csharp:Shop.Client.Log(System.Int32)
+rel contains csharp:Shop.Client -> csharp:Shop.Client.Log(System.Int32,System.String,System.Boolean)
+rel contains csharp:Shop.Client -> csharp:Shop.Client._count
+rel contains csharp:Shop.Client -> csharp:Shop.Client._repo
+# imp: keine
+# diag: keine

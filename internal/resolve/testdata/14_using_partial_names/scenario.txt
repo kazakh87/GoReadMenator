@@ -1,0 +1,2 @@
+SZENARIO: Ein Teilname wird über eine using-Direktive gefunden, wenn der Namensraum nicht umgebend ist. Mehrdeutigkeit über zwei using-Namensräume bleibt offen, wie beim Compiler (CS0104). Ohne passendes using bleibt der Name offen.
+ABDECKUNG: Models.Order über using Shop, eindeutig über genau einen Namensraum, zwei using-Namensräume mit gleichem Typ bleiben offen, Teilname ohne using bleibt HEURISTIC

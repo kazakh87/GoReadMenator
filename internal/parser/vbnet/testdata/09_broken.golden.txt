@@ -1,0 +1,15 @@
+file loc=9 filedoc=""
+sym vbnet:Okay() kind=method name=Okay fqn=Okay mods=public sig="public function Okay() As Integer"
+sym vbnet:Shop kind=namespace name=Shop fqn=Shop
+sym vbnet:Shop.Half kind=class name=Half fqn=Shop.Half container=vbnet:Shop mods=public sig="public class Half"
+sym vbnet:Shop.Half.Broken(System.Int32) kind=method name=Broken fqn=Shop.Half.Broken container=vbnet:Shop.Half mods=public sig="public sub Broken(a As Integer)"
+loc vbnet:Okay() decl 9:17-11:12
+loc vbnet:Shop decl 3:11-7:13
+loc vbnet:Shop.Half decl 4:18-6:13
+loc vbnet:Shop.Half.Broken(System.Int32) decl 5:20-6:13
+# ref: keine
+rel contains vbnet:Shop -> vbnet:Shop.Half
+rel contains vbnet:Shop.Half -> vbnet:Shop.Half.Broken(System.Int32)
+# imp: keine
+diag 6:5 Körper nicht mit End sub geschlossen
+diag 8:1 Namespace ohne Namen

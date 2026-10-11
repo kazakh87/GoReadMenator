@@ -1,0 +1,2 @@
+SZENARIO: Das Token-Budget begrenzt jede Antwort. Über den Cursor lassen sich alle Einträge seitenweise abrufen, ohne Doppelte und ohne Lücken.
+ABDECKUNG: api mit kleinem Budget, nextCursor, Fortsetzung über mehrere Seiten, Budget-Untergrenze, find_symbols mit Limit

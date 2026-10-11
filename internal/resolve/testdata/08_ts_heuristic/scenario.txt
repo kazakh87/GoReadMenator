@@ -1,0 +1,2 @@
+SZENARIO: Ohne Import wird ein Name nur über das Projekt zugeordnet. Eindeutiger Name im Projekt ist HEURISTIC. Eine Funktion derselben Datei gewinnt im Datei-Scope (EXACT), auch wenn der Name anderswo doppelt vorkommt.
+ABDECKUNG: HEURISTIC über eindeutigen Namen, EXACT über Datei-Scope bei doppeltem Namen, Aufruf auf Methode eines unbekannten Objekts

@@ -1,0 +1,2 @@
+SZENARIO: Generische Typen werden über die Anzahl der Typargumente gefunden. Doku-Verweise mit Parametern (cref) treffen die exakte Überladung.
+ABDECKUNG: IRequest`1 gegen IRequest`2 über Arity, Basisangabe mit Typargumenten, cref mit Parametern

@@ -1,0 +1,15 @@
+# Binaries
+/goreadmenator
+/bin/
+*.exe
+
+# Lokale Datenbanken und Ausgaben
+*.db
+*.db-wal
+*.db-shm
+/out/
+
+# Go
+*.test
+*.out
+coverage.*

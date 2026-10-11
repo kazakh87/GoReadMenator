@@ -1,0 +1,18 @@
+# Verwendungen, Beziehungen und Imports (sortiert)
+imp app.ts default "./lib" -> lib.ts
+imp app.ts default "react" -> extern
+imp app.ts esm "./lib" -> lib.ts
+imp app.ts namespace "./lib" -> lib.ts
+ref app.ts:1 import Repo -> tsjs:lib.ts#Repo [EXACT] in 
+ref app.ts:1 import h -> tsjs:lib.ts#helper(number) [EXACT] in 
+ref app.ts:1 import helper -> tsjs:lib.ts#helper(number) [HEURISTIC] in 
+ref app.ts:10 call keys -> tsjs:lib.ts#util.keys(object) [HEURISTIC] in tsjs:app.ts#run()
+ref app.ts:11 call createElement -> - [HEURISTIC] in tsjs:app.ts#run()
+ref app.ts:2 import main -> tsjs:lib.ts#main() [EXACT] in 
+ref app.ts:3 import lib -> - [HEURISTIC] in 
+ref app.ts:4 import React -> - [HEURISTIC] in 
+ref app.ts:7 construct Repo -> tsjs:lib.ts#Repo [EXACT] in tsjs:app.ts#run()
+ref app.ts:8 call h -> tsjs:lib.ts#helper(number) [EXACT] in tsjs:app.ts#run()
+ref app.ts:9 call main -> tsjs:lib.ts#main() [EXACT] in tsjs:app.ts#run()
+rel contains tsjs:lib.ts#Repo -> tsjs:lib.ts#Repo.find(string)
+rel contains tsjs:lib.ts#util -> tsjs:lib.ts#util.keys(object)

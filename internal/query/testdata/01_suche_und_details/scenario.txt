@@ -1,0 +1,2 @@
+SZENARIO: Suche, Details und Eindeutigkeit: Treffer nach Namensteil, genauer Treffer zuerst, Art-Filter, mehrdeutiger Name mit Auswahl, Status des Index
+ABDECKUNG: find_symbols, Art-Filter, get_symbol mit Dokumentation und Fundorten, mehrdeutiger Name als Fehler mit Kandidaten, api mit Sichtbarkeit, status

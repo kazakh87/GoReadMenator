@@ -1,0 +1,175 @@
+## api {"scope":"App.Big.","budget_tokens":200}
+{
+  "items": [
+    {
+      "kind": "class",
+      "fqn": "App.Big.Hub",
+      "sig": "public class Hub"
+    },
+    {
+      "kind": "method",
+      "fqn": "App.Big.Hub.Run0",
+      "sig": "public int Run0(int a, string b)",
+      "doc": "Methode 0 mit einer ausführlichen Beschreibung für die Schnittstelle."
+    },
+    {
+      "kind": "method",
+      "fqn": "App.Big.Hub.Run1",
+      "sig": "public int Run1(int a, string b)",
+      "doc": "Methode 1 mit einer ausführlichen Beschreibung für die Schnittstelle."
+    },
+    {
+      "kind": "method",
+      "fqn": "App.Big.Hub.Run10",
+      "sig": "public int Run10(int a, string b)",
+      "doc": "Methode 10 mit einer ausführlichen Beschreibung für die Schnittstelle."
+    },
+    {
+      "kind": "method",
+      "fqn": "App.Big.Hub.Run11",
+      "sig": "public int Run11(int a, string b)",
+      "doc": "Methode 11 mit einer ausführlichen Beschreibung für die Schnittstelle."
+    }
+  ],
+  "total": 61,
+  "truncated": true,
+  "nextCursor": "5"
+}
+
+## api {"scope":"App.Big.","budget_tokens":200,"cursor":"5"}
+{
+  "items": [
+    {
+      "kind": "method",
+      "fqn": "App.Big.Hub.Run12",
+      "sig": "public int Run12(int a, string b)",
+      "doc": "Methode 12 mit einer ausführlichen Beschreibung für die Schnittstelle."
+    },
+    {
+      "kind": "method",
+      "fqn": "App.Big.Hub.Run13",
+      "sig": "public int Run13(int a, string b)",
+      "doc": "Methode 13 mit einer ausführlichen Beschreibung für die Schnittstelle."
+    },
+    {
+      "kind": "method",
+      "fqn": "App.Big.Hub.Run14",
+      "sig": "public int Run14(int a, string b)",
+      "doc": "Methode 14 mit einer ausführlichen Beschreibung für die Schnittstelle."
+    },
+    {
+      "kind": "method",
+      "fqn": "App.Big.Hub.Run15",
+      "sig": "public int Run15(int a, string b)",
+      "doc": "Methode 15 mit einer ausführlichen Beschreibung für die Schnittstelle."
+    }
+  ],
+  "total": 61,
+  "truncated": true,
+  "nextCursor": "9"
+}
+
+## api {"scope":"App.Big.","budget_tokens":200,"cursor":"9"}
+{
+  "items": [
+    {
+      "kind": "method",
+      "fqn": "App.Big.Hub.Run16",
+      "sig": "public int Run16(int a, string b)",
+      "doc": "Methode 16 mit einer ausführlichen Beschreibung für die Schnittstelle."
+    },
+    {
+      "kind": "method",
+      "fqn": "App.Big.Hub.Run17",
+      "sig": "public int Run17(int a, string b)",
+      "doc": "Methode 17 mit einer ausführlichen Beschreibung für die Schnittstelle."
+    },
+    {
+      "kind": "method",
+      "fqn": "App.Big.Hub.Run18",
+      "sig": "public int Run18(int a, string b)",
+      "doc": "Methode 18 mit einer ausführlichen Beschreibung für die Schnittstelle."
+    },
+    {
+      "kind": "method",
+      "fqn": "App.Big.Hub.Run19",
+      "sig": "public int Run19(int a, string b)",
+      "doc": "Methode 19 mit einer ausführlichen Beschreibung für die Schnittstelle."
+    }
+  ],
+  "total": 61,
+  "truncated": true,
+  "nextCursor": "13"
+}
+
+## api {"scope":"App.Big.","budget_tokens":1,"cursor":""}
+{
+  "items": [
+    {
+      "kind": "class",
+      "fqn": "App.Big.Hub",
+      "sig": "public class Hub"
+    },
+    {
+      "kind": "method",
+      "fqn": "App.Big.Hub.Run0",
+      "sig": "public int Run0(int a, string b)",
+      "doc": "Methode 0 mit einer ausführlichen Beschreibung für die Schnittstelle."
+    },
+    {
+      "kind": "method",
+      "fqn": "App.Big.Hub.Run1",
+      "sig": "public int Run1(int a, string b)",
+      "doc": "Methode 1 mit einer ausführlichen Beschreibung für die Schnittstelle."
+    },
+    {
+      "kind": "method",
+      "fqn": "App.Big.Hub.Run10",
+      "sig": "public int Run10(int a, string b)",
+      "doc": "Methode 10 mit einer ausführlichen Beschreibung für die Schnittstelle."
+    },
+    {
+      "kind": "method",
+      "fqn": "App.Big.Hub.Run11",
+      "sig": "public int Run11(int a, string b)",
+      "doc": "Methode 11 mit einer ausführlichen Beschreibung für die Schnittstelle."
+    }
+  ],
+  "total": 61,
+  "truncated": true,
+  "nextCursor": "5"
+}
+
+## find_symbols {"q":"Run","limit":3}
+{
+  "items": [
+    {
+      "id": "csharp:App.Big.Hub.Run0(System.Int32,System.String)",
+      "kind": "method",
+      "fqn": "App.Big.Hub.Run0",
+      "file": "Hub.cs",
+      "line": 4,
+      "sig": "public int Run0(int a, string b)"
+    },
+    {
+      "id": "csharp:App.Big.Hub.Run1(System.Int32,System.String)",
+      "kind": "method",
+      "fqn": "App.Big.Hub.Run1",
+      "file": "Hub.cs",
+      "line": 6,
+      "sig": "public int Run1(int a, string b)"
+    },
+    {
+      "id": "csharp:App.Big.Hub.Run10(System.Int32,System.String)",
+      "kind": "method",
+      "fqn": "App.Big.Hub.Run10",
+      "file": "Hub.cs",
+      "line": 24,
+      "sig": "public int Run10(int a, string b)"
+    }
+  ],
+  "total": 60,
+  "truncated": true,
+  "nextCursor": "3"
+}
+

@@ -1,0 +1,31 @@
+file loc=17 filedoc=""
+sym vbnet:Shop kind=namespace name=Shop fqn=Shop
+sym vbnet:Shop.Account kind=class name=Account fqn=Shop.Account container=vbnet:Shop mods=public sig="public class Account"
+sym vbnet:Shop.Account.Balance kind=property name=Balance fqn=Shop.Account.Balance container=vbnet:Shop.Account mods=public sig="public property Balance() As Decimal"
+sym vbnet:Shop.Account.Changed kind=event name=Changed fqn=Shop.Account.Changed container=vbnet:Shop.Account mods=public
+sym vbnet:Shop.Account.MaxSize kind=field name=MaxSize fqn=Shop.Account.MaxSize container=vbnet:Shop.Account mods=public
+sym vbnet:Shop.Account.Name kind=property name=Name fqn=Shop.Account.Name container=vbnet:Shop.Account mods=public sig="public property Name() As String"
+sym vbnet:Shop.Account._a kind=field name=_a fqn=Shop.Account._a container=vbnet:Shop.Account mods=private
+sym vbnet:Shop.Account._b kind=field name=_b fqn=Shop.Account._b container=vbnet:Shop.Account mods=private
+sym vbnet:Shop.Account.count kind=field name=count fqn=Shop.Account.count container=vbnet:Shop.Account mods=private,shared
+loc vbnet:Shop decl 3:11-19:13
+loc vbnet:Shop.Account decl 4:18-18:13
+loc vbnet:Shop.Account.Balance decl 9:25-16:20
+loc vbnet:Shop.Account.Changed decl 17:22-17:44
+loc vbnet:Shop.Account.MaxSize decl 6:22-6:44
+loc vbnet:Shop.Account.Name decl 8:25-8:38
+loc vbnet:Shop.Account._a decl 5:17-5:33
+loc vbnet:Shop.Account._b decl 5:36-5:48
+loc vbnet:Shop.Account.count decl 7:24-7:36
+ref type-ref target="EventHandler" at=17:33-17:44 conf=HEURISTIC in=vbnet:Shop.Account.Changed role=has-type
+ref write target="_a" at=14:17-14:18 conf=HEURISTIC in=vbnet:Shop.Account.Balance
+rel contains vbnet:Shop -> vbnet:Shop.Account
+rel contains vbnet:Shop.Account -> vbnet:Shop.Account.Balance
+rel contains vbnet:Shop.Account -> vbnet:Shop.Account.Changed
+rel contains vbnet:Shop.Account -> vbnet:Shop.Account.MaxSize
+rel contains vbnet:Shop.Account -> vbnet:Shop.Account.Name
+rel contains vbnet:Shop.Account -> vbnet:Shop.Account._a
+rel contains vbnet:Shop.Account -> vbnet:Shop.Account._b
+rel contains vbnet:Shop.Account -> vbnet:Shop.Account.count
+# imp: keine
+# diag: keine

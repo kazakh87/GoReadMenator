@@ -1,0 +1,16 @@
+# Verwendungen, Beziehungen und Imports (sortiert)
+imp App.cs using "Shop" -> extern
+imp App2.cs using "Other" -> extern
+imp App2.cs using "Shop" -> extern
+ref App.cs:7 type-ref Models.Order -> csharp:Shop.Models.Order [RESOLVED] in csharp:Web.Runner.Eindeutig
+ref App.cs:8 type-ref Models.Invoice -> csharp:Other.Models.Invoice [HEURISTIC] in csharp:Web.Runner.Fehlt
+ref App2.cs:8 type-ref Models.Order -> - [HEURISTIC] in csharp:Web2.Runner2.Mehrdeutig
+rel contains csharp:Other.Models -> csharp:Other.Models.Invoice
+rel contains csharp:Other.Models -> csharp:Other.Models.Order
+rel contains csharp:Shop.Models -> csharp:Shop.Models.Order
+rel contains csharp:Web -> csharp:Web.Runner
+rel contains csharp:Web.Runner -> csharp:Web.Runner.Eindeutig
+rel contains csharp:Web.Runner -> csharp:Web.Runner.Fehlt
+rel contains csharp:Web2 -> csharp:Web2.Runner2
+rel contains csharp:Web2.Runner2 -> csharp:Web2.Runner2.Mehrdeutig
+rel has_type csharp:Web.Runner.Eindeutig -> csharp:Shop.Models.Order

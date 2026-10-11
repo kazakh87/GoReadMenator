@@ -1,0 +1,44 @@
+file loc=20 filedoc=""
+sym vbnet:Shop kind=namespace name=Shop fqn=Shop
+sym vbnet:Shop.IRepo kind=interface name=IRepo fqn=Shop.IRepo container=vbnet:Shop mods=public sig="public interface IRepo"
+sym vbnet:Shop.IRepo.Count kind=property name=Count fqn=Shop.IRepo.Count container=vbnet:Shop.IRepo sig="property Count() As Integer"
+sym vbnet:Shop.IRepo.Find(System.Int32) kind=method name=Find fqn=Shop.IRepo.Find container=vbnet:Shop.IRepo sig="function Find(id As Integer) As Item"
+sym vbnet:Shop.IRepo.Save(Item) kind=method name=Save fqn=Shop.IRepo.Save container=vbnet:Shop.IRepo sig="sub Save(item As Item)"
+sym vbnet:Shop.Point kind=struct name=Point fqn=Shop.Point container=vbnet:Shop mods=public sig="public structure Point"
+sym vbnet:Shop.Point.X kind=field name=X fqn=Shop.Point.X container=vbnet:Shop.Point mods=public
+sym vbnet:Shop.Point.Y kind=field name=Y fqn=Shop.Point.Y container=vbnet:Shop.Point mods=public
+sym vbnet:Shop.Program kind=class name=Program fqn=Shop.Program container=vbnet:Shop mods=public sig="public module Program"
+sym vbnet:Shop.Program.Main() kind=method name=Main fqn=Shop.Program.Main container=vbnet:Shop.Program mods=public sig="public sub Main()"
+sym vbnet:Shop.Status kind=enum name=Status fqn=Shop.Status container=vbnet:Shop mods=public
+sym vbnet:Shop.Status.Closed kind=field name=Closed fqn=Shop.Status.Closed container=vbnet:Shop.Status
+sym vbnet:Shop.Status.Open kind=field name=Open fqn=Shop.Status.Open container=vbnet:Shop.Status
+loc vbnet:Shop decl 3:11-25:13
+loc vbnet:Shop.IRepo decl 10:22-14:17
+loc vbnet:Shop.IRepo.Count decl 13:18-13:33
+loc vbnet:Shop.IRepo.Find(System.Int32) decl 12:18-12:44
+loc vbnet:Shop.IRepo.Save(Item) decl 11:13-11:30
+loc vbnet:Shop.Point decl 16:22-19:17
+loc vbnet:Shop.Point.X decl 17:16-17:27
+loc vbnet:Shop.Point.Y decl 18:16-18:27
+loc vbnet:Shop.Program decl 4:19-8:14
+loc vbnet:Shop.Program.Main() decl 5:20-7:15
+loc vbnet:Shop.Status decl 21:17-24:12
+loc vbnet:Shop.Status.Closed decl 23:9-23:18
+loc vbnet:Shop.Status.Open decl 22:9-22:12
+ref call target="WriteLine" at=6:21-6:29 conf=HEURISTIC in=vbnet:Shop.Program.Main() arity=1 qual=Console
+ref type-ref target="Item" at=11:26-11:29 conf=HEURISTIC in=vbnet:Shop.IRepo.Save(Item) role=param-type
+ref type-ref target="Item" at=12:41-12:44 conf=HEURISTIC in=vbnet:Shop.IRepo.Find(System.Int32) role=returns
+rel contains vbnet:Shop -> vbnet:Shop.IRepo
+rel contains vbnet:Shop -> vbnet:Shop.Point
+rel contains vbnet:Shop -> vbnet:Shop.Program
+rel contains vbnet:Shop -> vbnet:Shop.Status
+rel contains vbnet:Shop.IRepo -> vbnet:Shop.IRepo.Count
+rel contains vbnet:Shop.IRepo -> vbnet:Shop.IRepo.Find(System.Int32)
+rel contains vbnet:Shop.IRepo -> vbnet:Shop.IRepo.Save(Item)
+rel contains vbnet:Shop.Point -> vbnet:Shop.Point.X
+rel contains vbnet:Shop.Point -> vbnet:Shop.Point.Y
+rel contains vbnet:Shop.Program -> vbnet:Shop.Program.Main()
+rel contains vbnet:Shop.Status -> vbnet:Shop.Status.Closed
+rel contains vbnet:Shop.Status -> vbnet:Shop.Status.Open
+# imp: keine
+# diag: keine

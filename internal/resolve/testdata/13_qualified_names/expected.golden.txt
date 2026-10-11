@@ -1,0 +1,18 @@
+# Verwendungen, Beziehungen und Imports (sortiert)
+ref App.cs:5 type-ref Shop.Models.Order -> csharp:Shop.Models.Order [EXACT] in csharp:Shop.App.Runner.Full
+ref App.cs:6 type-ref Models.Order -> csharp:Shop.Models.Order [EXACT] in csharp:Shop.App.Runner.Relative
+ref App.cs:7 type-ref Archive.Order -> csharp:Archive.Order [EXACT] in csharp:Shop.App.Runner.Other
+ref App.cs:8 type-ref Archive.Order -> csharp:Archive.Order [EXACT] in csharp:Shop.App.Runner.Nested
+ref App.cs:8 type-ref Shop.Models.Box -> csharp:Shop.Models.Box`1 [EXACT] in csharp:Shop.App.Runner.Nested
+rel contains csharp:Archive -> csharp:Archive.Order
+rel contains csharp:Shop.App -> csharp:Shop.App.Runner
+rel contains csharp:Shop.App.Runner -> csharp:Shop.App.Runner.Full
+rel contains csharp:Shop.App.Runner -> csharp:Shop.App.Runner.Nested
+rel contains csharp:Shop.App.Runner -> csharp:Shop.App.Runner.Other
+rel contains csharp:Shop.App.Runner -> csharp:Shop.App.Runner.Relative
+rel contains csharp:Shop.Models -> csharp:Shop.Models.Box`1
+rel contains csharp:Shop.Models -> csharp:Shop.Models.Order
+rel has_type csharp:Shop.App.Runner.Full -> csharp:Shop.Models.Order
+rel has_type csharp:Shop.App.Runner.Nested -> csharp:Shop.Models.Box`1
+rel has_type csharp:Shop.App.Runner.Other -> csharp:Archive.Order
+rel has_type csharp:Shop.App.Runner.Relative -> csharp:Shop.Models.Order

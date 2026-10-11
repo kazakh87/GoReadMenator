@@ -1,0 +1,67 @@
+# Verwendungen, Beziehungen und Imports (sortiert)
+imp Controllers/OrdersController.cs using "Microsoft.AspNetCore.Mvc" -> extern
+ref Controllers/OrdersController.cs:11 attribute HttpGet -> - [HEURISTIC] in csharp:Web.Controllers.OrdersController.Get(System.Int32)
+ref Controllers/OrdersController.cs:11 http-route GET api/orders/{} -> - [EXACT] in csharp:Web.Controllers.OrdersController.Get(System.Int32)
+ref Controllers/OrdersController.cs:12 call Ok -> - [HEURISTIC] in csharp:Web.Controllers.OrdersController.Get(System.Int32)
+ref Controllers/OrdersController.cs:12 type-ref IActionResult -> - [HEURISTIC] in csharp:Web.Controllers.OrdersController.Get(System.Int32)
+ref Controllers/OrdersController.cs:14 attribute HttpPost -> - [HEURISTIC] in csharp:Web.Controllers.OrdersController.Create()
+ref Controllers/OrdersController.cs:14 http-route POST api/orders -> - [EXACT] in csharp:Web.Controllers.OrdersController.Create()
+ref Controllers/OrdersController.cs:15 call Ok -> - [HEURISTIC] in csharp:Web.Controllers.OrdersController.Create()
+ref Controllers/OrdersController.cs:15 type-ref IActionResult -> - [HEURISTIC] in csharp:Web.Controllers.OrdersController.Create()
+ref Controllers/OrdersController.cs:18 inherits ControllerBase -> - [HEURISTIC] in csharp:Web.Controllers.ReportsController
+ref Controllers/OrdersController.cs:20 attribute HttpGet -> - [HEURISTIC] in csharp:Web.Controllers.ReportsController.Summary()
+ref Controllers/OrdersController.cs:20 http-route GET api/reports/summary -> - [EXACT] in csharp:Web.Controllers.ReportsController.Summary()
+ref Controllers/OrdersController.cs:21 call Ok -> - [HEURISTIC] in csharp:Web.Controllers.ReportsController.Summary()
+ref Controllers/OrdersController.cs:21 type-ref IActionResult -> - [HEURISTIC] in csharp:Web.Controllers.ReportsController.Summary()
+ref Controllers/OrdersController.cs:23 attribute HttpGet -> - [HEURISTIC] in csharp:Web.Controllers.ReportsController.ItemA()
+ref Controllers/OrdersController.cs:23 http-route GET api/shared/item -> - [EXACT] in csharp:Web.Controllers.ReportsController.ItemA()
+ref Controllers/OrdersController.cs:24 call Ok -> - [HEURISTIC] in csharp:Web.Controllers.ReportsController.ItemA()
+ref Controllers/OrdersController.cs:24 type-ref IActionResult -> - [HEURISTIC] in csharp:Web.Controllers.ReportsController.ItemA()
+ref Controllers/OrdersController.cs:27 inherits ControllerBase -> - [HEURISTIC] in csharp:Web.Controllers.ArchiveController
+ref Controllers/OrdersController.cs:29 attribute HttpGet -> - [HEURISTIC] in csharp:Web.Controllers.ArchiveController.ItemB()
+ref Controllers/OrdersController.cs:29 http-route GET api/shared/item -> - [EXACT] in csharp:Web.Controllers.ArchiveController.ItemB()
+ref Controllers/OrdersController.cs:30 call Ok -> - [HEURISTIC] in csharp:Web.Controllers.ArchiveController.ItemB()
+ref Controllers/OrdersController.cs:30 type-ref IActionResult -> - [HEURISTIC] in csharp:Web.Controllers.ArchiveController.ItemB()
+ref Controllers/OrdersController.cs:5 attribute Route -> - [HEURISTIC] in csharp:Web.Controllers.OrdersController
+ref Controllers/OrdersController.cs:6 inherits ControllerBase -> - [HEURISTIC] in csharp:Web.Controllers.OrdersController
+ref Controllers/OrdersController.cs:8 attribute HttpGet -> - [HEURISTIC] in csharp:Web.Controllers.OrdersController.List()
+ref Controllers/OrdersController.cs:8 http-route GET api/orders -> - [EXACT] in csharp:Web.Controllers.OrdersController.List()
+ref Controllers/OrdersController.cs:9 call Ok -> - [HEURISTIC] in csharp:Web.Controllers.OrdersController.List()
+ref Controllers/OrdersController.cs:9 type-ref IActionResult -> - [HEURISTIC] in csharp:Web.Controllers.OrdersController.List()
+ref Program.cs:1 call Create -> - [HEURISTIC] in csharp:<top-level>@Program.cs
+ref Program.cs:3 http-route GET api/health -> - [EXACT] in csharp:<top-level>@Program.cs
+ref Program.cs:4 http-route DELETE api/cache/{} -> - [EXACT] in csharp:<top-level>@Program.cs
+ref wwwroot/orders.ts:10 call fetch -> - [HEURISTIC] in tsjs:wwwroot/orders.ts#loadOrderTpl(number)
+ref wwwroot/orders.ts:10 http-call GET api/orders/{} -> - [HEURISTIC] in tsjs:wwwroot/orders.ts#loadOrderTpl(number)
+ref wwwroot/orders.ts:14 call fetch -> - [HEURISTIC] in tsjs:wwwroot/orders.ts#createOrder(string)
+ref wwwroot/orders.ts:14 http-call POST api/orders -> - [HEURISTIC] in tsjs:wwwroot/orders.ts#createOrder(string)
+ref wwwroot/orders.ts:18 call fetch -> - [HEURISTIC] in tsjs:wwwroot/orders.ts#reports()
+ref wwwroot/orders.ts:18 http-call GET api/reports/summary -> - [HEURISTIC] in tsjs:wwwroot/orders.ts#reports()
+ref wwwroot/orders.ts:2 call fetch -> - [HEURISTIC] in tsjs:wwwroot/orders.ts#loadOrders()
+ref wwwroot/orders.ts:2 http-call GET api/orders -> - [HEURISTIC] in tsjs:wwwroot/orders.ts#loadOrders()
+ref wwwroot/orders.ts:22 call fetch -> - [HEURISTIC] in tsjs:wwwroot/orders.ts#shared()
+ref wwwroot/orders.ts:22 http-call GET api/shared/item -> - [HEURISTIC] in tsjs:wwwroot/orders.ts#shared()
+ref wwwroot/orders.ts:26 call fetch -> - [HEURISTIC] in tsjs:wwwroot/orders.ts#health()
+ref wwwroot/orders.ts:26 http-call GET api/health -> - [HEURISTIC] in tsjs:wwwroot/orders.ts#health()
+ref wwwroot/orders.ts:30 call fetch -> - [HEURISTIC] in tsjs:wwwroot/orders.ts#clearCache(string)
+ref wwwroot/orders.ts:30 http-call DELETE api/cache/{} -> - [HEURISTIC] in tsjs:wwwroot/orders.ts#clearCache(string)
+ref wwwroot/orders.ts:34 call post -> - [HEURISTIC] in tsjs:wwwroot/orders.ts#viaAxios(number)
+ref wwwroot/orders.ts:34 http-call POST api/orders/{} -> - [HEURISTIC] in tsjs:wwwroot/orders.ts#viaAxios(number)
+ref wwwroot/orders.ts:6 call fetch -> - [HEURISTIC] in tsjs:wwwroot/orders.ts#loadOrder(number)
+ref wwwroot/orders.ts:6 http-call GET api/orders/{} -> - [HEURISTIC] in tsjs:wwwroot/orders.ts#loadOrder(number)
+rel calls_endpoint tsjs:wwwroot/orders.ts#clearCache(string) -> csharp:<top-level>@Program.cs
+rel calls_endpoint tsjs:wwwroot/orders.ts#createOrder(string) -> csharp:Web.Controllers.OrdersController.Create()
+rel calls_endpoint tsjs:wwwroot/orders.ts#health() -> csharp:<top-level>@Program.cs
+rel calls_endpoint tsjs:wwwroot/orders.ts#loadOrder(number) -> csharp:Web.Controllers.OrdersController.Get(System.Int32)
+rel calls_endpoint tsjs:wwwroot/orders.ts#loadOrderTpl(number) -> csharp:Web.Controllers.OrdersController.Get(System.Int32)
+rel calls_endpoint tsjs:wwwroot/orders.ts#loadOrders() -> csharp:Web.Controllers.OrdersController.List()
+rel calls_endpoint tsjs:wwwroot/orders.ts#reports() -> csharp:Web.Controllers.ReportsController.Summary()
+rel contains csharp:Web.Controllers -> csharp:Web.Controllers.ArchiveController
+rel contains csharp:Web.Controllers -> csharp:Web.Controllers.OrdersController
+rel contains csharp:Web.Controllers -> csharp:Web.Controllers.ReportsController
+rel contains csharp:Web.Controllers.ArchiveController -> csharp:Web.Controllers.ArchiveController.ItemB()
+rel contains csharp:Web.Controllers.OrdersController -> csharp:Web.Controllers.OrdersController.Create()
+rel contains csharp:Web.Controllers.OrdersController -> csharp:Web.Controllers.OrdersController.Get(System.Int32)
+rel contains csharp:Web.Controllers.OrdersController -> csharp:Web.Controllers.OrdersController.List()
+rel contains csharp:Web.Controllers.ReportsController -> csharp:Web.Controllers.ReportsController.ItemA()
+rel contains csharp:Web.Controllers.ReportsController -> csharp:Web.Controllers.ReportsController.Summary()

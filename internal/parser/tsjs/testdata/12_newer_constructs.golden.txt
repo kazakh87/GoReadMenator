@@ -1,0 +1,33 @@
+file loc=12 filedoc=""
+sym tsjs:src/12_newer_constructs.ts#Cache kind=class name=Cache fqn=src/12_newer_constructs.ts#Cache mods=export sig="class Cache" doc=inline
+sym tsjs:src/12_newer_constructs.ts#Cache.#secret() kind=method name=#secret fqn=src/12_newer_constructs.ts#Cache.#secret container=tsjs:src/12_newer_constructs.ts#Cache sig="#secret()"
+sym tsjs:src/12_newer_constructs.ts#Cache.cfg kind=property name=cfg fqn=src/12_newer_constructs.ts#Cache.cfg container=tsjs:src/12_newer_constructs.ts#Cache doc=inline
+sym tsjs:src/12_newer_constructs.ts#Cache.run() kind=method name=run fqn=src/12_newer_constructs.ts#Cache.run container=tsjs:src/12_newer_constructs.ts#Cache mods=override sig="override run(): void"
+sym tsjs:src/12_newer_constructs.ts#Cache.size kind=property name=size fqn=src/12_newer_constructs.ts#Cache.size container=tsjs:src/12_newer_constructs.ts#Cache mods=accessor doc=inline
+sym tsjs:src/12_newer_constructs.ts#Cache.total kind=property name=total fqn=src/12_newer_constructs.ts#Cache.total container=tsjs:src/12_newer_constructs.ts#Cache doc=inline
+sym tsjs:src/12_newer_constructs.ts#Cache.value kind=property name=value fqn=src/12_newer_constructs.ts#Cache.value container=tsjs:src/12_newer_constructs.ts#Cache sig="value()"
+sym tsjs:src/12_newer_constructs.ts#main() kind=function name=main fqn=src/12_newer_constructs.ts#main mods=async sig="async main()"
+sym tsjs:src/12_newer_constructs.ts#show(Pair<number>) kind=function name=show fqn=src/12_newer_constructs.ts#show sig="show(input: Pair<number>)"
+loc tsjs:src/12_newer_constructs.ts#Cache decl 3:14-11:1
+loc tsjs:src/12_newer_constructs.ts#Cache.#secret() decl 6:3-6:25
+loc tsjs:src/12_newer_constructs.ts#Cache.cfg decl 10:3-10:5
+loc tsjs:src/12_newer_constructs.ts#Cache.run() decl 7:12-7:25
+loc tsjs:src/12_newer_constructs.ts#Cache.size decl 4:12-4:15
+loc tsjs:src/12_newer_constructs.ts#Cache.total decl 9:3-9:7
+loc tsjs:src/12_newer_constructs.ts#Cache.value decl 8:7-8:46
+loc tsjs:src/12_newer_constructs.ts#main() decl 13:16-13:39
+loc tsjs:src/12_newer_constructs.ts#show(Pair<number>) decl 12:10-12:52
+ref call target="init" at=5:12-5:15 conf=HEURISTIC in=tsjs:src/12_newer_constructs.ts#Cache
+ref call target="load" at=13:31-13:34 conf=HEURISTIC in=tsjs:src/12_newer_constructs.ts#main()
+ref call target="openResource" at=14:13-14:24 conf=HEURISTIC
+ref call target="toFixed" at=8:35-8:41 conf=HEURISTIC in=tsjs:src/12_newer_constructs.ts#Cache.value
+ref type-ref target="Config" at=10:32-10:37 conf=HEURISTIC in=tsjs:src/12_newer_constructs.ts#Cache.cfg
+ref type-ref target="Pair" at=12:22-12:25 conf=HEURISTIC in=tsjs:src/12_newer_constructs.ts#show(Pair<number>) role=param-type
+rel contains tsjs:src/12_newer_constructs.ts#Cache -> tsjs:src/12_newer_constructs.ts#Cache.#secret()
+rel contains tsjs:src/12_newer_constructs.ts#Cache -> tsjs:src/12_newer_constructs.ts#Cache.cfg
+rel contains tsjs:src/12_newer_constructs.ts#Cache -> tsjs:src/12_newer_constructs.ts#Cache.run()
+rel contains tsjs:src/12_newer_constructs.ts#Cache -> tsjs:src/12_newer_constructs.ts#Cache.size
+rel contains tsjs:src/12_newer_constructs.ts#Cache -> tsjs:src/12_newer_constructs.ts#Cache.total
+rel contains tsjs:src/12_newer_constructs.ts#Cache -> tsjs:src/12_newer_constructs.ts#Cache.value
+# imp: keine
+# diag: keine

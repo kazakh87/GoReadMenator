@@ -1,0 +1,25 @@
+@* SZENARIO: Razor-Komponente mit @code-Block (Felder, Methoden) und @{ }-Block mit Anweisungen; Kommentare und Strings mit @ bleiben folgenlos
+   ABDECKUNG: @code mit Feld und Methode, @functions, @{ }-Block mit Aufruf, Schleife mit @foreach und HTML im Körper, Zeichenkette mit @ im C#-Code *@
+<div>
+    @{
+        var total = Compute(3);
+        Log("@nicht-ein-symbol");
+    }
+    @foreach (var item in Items)
+    {
+        <li>@item.Name</li>
+    }
+</div>
+
+@code {
+    private int counter = 0;
+
+    private List<Item> Items = new();
+
+    private int Compute(int factor)
+    {
+        return factor * 2;
+    }
+
+    private void Log(string text) { }
+}

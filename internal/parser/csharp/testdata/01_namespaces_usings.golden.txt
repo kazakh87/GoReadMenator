@@ -1,0 +1,19 @@
+file loc=13 filedoc=""
+sym csharp:Shop.Core kind=namespace name=Core fqn=Shop.Core
+sym csharp:Shop.Core.Catalog kind=class name=Catalog fqn=Shop.Core.Catalog container=csharp:Shop.Core mods=public sig="public class Catalog"
+sym csharp:Shop.Core.Inner kind=namespace name=Inner fqn=Shop.Core.Inner container=csharp:Shop.Core
+sym csharp:Shop.Core.Inner.Deep kind=class name=Deep fqn=Shop.Core.Inner.Deep container=csharp:Shop.Core.Inner mods=public sig="public class Deep"
+loc csharp:Shop.Core decl 9:11-17:1
+loc csharp:Shop.Core.Catalog decl 16:18-16:28
+loc csharp:Shop.Core.Inner decl 11:15-14:5
+loc csharp:Shop.Core.Inner.Deep decl 13:22-13:29
+# ref: keine
+rel contains csharp:Shop.Core -> csharp:Shop.Core.Catalog
+rel contains csharp:Shop.Core -> csharp:Shop.Core.Inner
+rel contains csharp:Shop.Core.Inner -> csharp:Shop.Core.Inner.Deep
+imp using "Alias=System.Text.StringBuilder"
+imp using "System"
+imp using "System.Collections.Generic"
+imp using "System.Linq"
+imp using "static System.Math"
+# diag: keine

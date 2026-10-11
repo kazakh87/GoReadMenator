@@ -1,0 +1,46 @@
+file loc=23 filedoc=""
+sym tsjs:src/03_classes.ts#Store kind=class name=Store fqn=src/03_classes.ts#Store mods=export,abstract sig="class Store" doc=inline
+sym tsjs:src/03_classes.ts#Store.#secret kind=property name=#secret fqn=src/03_classes.ts#Store.#secret container=tsjs:src/03_classes.ts#Store sig="#secret: string" doc=inline
+sym tsjs:src/03_classes.ts#Store.constructor(HttpClient,any) kind=constructor name=constructor fqn=src/03_classes.ts#Store.constructor container=tsjs:src/03_classes.ts#Store sig="constructor(http: HttpClient, name: any)"
+sym tsjs:src/03_classes.ts#Store.count kind=property name=count fqn=src/03_classes.ts#Store.count container=tsjs:src/03_classes.ts#Store mods=static doc=inline
+sym tsjs:src/03_classes.ts#Store.items kind=property name=items fqn=src/03_classes.ts#Store.items container=tsjs:src/03_classes.ts#Store mods=private,readonly sig="items: Item[]" doc=inline
+sym tsjs:src/03_classes.ts#Store.label kind=property name=label fqn=src/03_classes.ts#Store.label container=tsjs:src/03_classes.ts#Store sig="label: string" doc=inline
+sym tsjs:src/03_classes.ts#Store.refresh() kind=method name=refresh fqn=src/03_classes.ts#Store.refresh container=tsjs:src/03_classes.ts#Store mods=abstract sig="abstract refresh(): void"
+sym tsjs:src/03_classes.ts#Store.size kind=property name=size fqn=src/03_classes.ts#Store.size container=tsjs:src/03_classes.ts#Store sig="size(): number"
+sym tsjs:src/03_classes.ts#Store.submit(Order,number) kind=method name=submit fqn=src/03_classes.ts#Store.submit container=tsjs:src/03_classes.ts#Store mods=async sig="async submit(order: Order, retries: number): Promise<Receipt>"
+loc tsjs:src/03_classes.ts#Store decl 6:23-31:1
+loc tsjs:src/03_classes.ts#Store.#secret decl 9:3-9:17
+loc tsjs:src/03_classes.ts#Store.constructor(HttpClient,any) decl 12:3-15:3
+loc tsjs:src/03_classes.ts#Store.count decl 8:10-8:14
+loc tsjs:src/03_classes.ts#Store.items decl 7:20-7:32
+loc tsjs:src/03_classes.ts#Store.label decl 10:3-10:16
+loc tsjs:src/03_classes.ts#Store.refresh() decl 30:12-30:27
+loc tsjs:src/03_classes.ts#Store.size decl 17:7-19:3
+loc tsjs:src/03_classes.ts#Store.size decl 21:7-23:3
+loc tsjs:src/03_classes.ts#Store.submit(Order,number) decl 25:9-28:3
+ref attribute target="Injectable" at=5:2-5:11 conf=HEURISTIC in=tsjs:src/03_classes.ts#Store
+ref call target="load" at=14:18-14:21 conf=HEURISTIC in=tsjs:src/03_classes.ts#Store.constructor(HttpClient,any)
+ref call target="post" at=26:31-26:34 conf=HEURISTIC in=tsjs:src/03_classes.ts#Store.submit(Order,number) arity=2 qual=http
+ref construct target="Receipt" at=27:16-27:22 conf=HEURISTIC in=tsjs:src/03_classes.ts#Store.submit(Order,number) arity=1
+ref http-call target="POST x" at=26:31-26:34 conf=HEURISTIC in=tsjs:src/03_classes.ts#Store.submit(Order,number)
+ref implements target="Reader" at=6:53-6:58 conf=HEURISTIC in=tsjs:src/03_classes.ts#Store
+ref implements target="Writer" at=6:61-6:66 conf=HEURISTIC in=tsjs:src/03_classes.ts#Store
+ref import target="Base" at=3:10-3:13 conf=EXACT
+ref inherits target="Base" at=6:37-6:40 conf=HEURISTIC in=tsjs:src/03_classes.ts#Store
+ref type-ref target="HttpClient" at=12:29-12:38 conf=HEURISTIC in=tsjs:src/03_classes.ts#Store.constructor(HttpClient,any) role=param-type
+ref type-ref target="Item" at=7:27-7:30 conf=HEURISTIC in=tsjs:src/03_classes.ts#Store.items role=has-type
+ref type-ref target="Order" at=25:23-25:27 conf=HEURISTIC in=tsjs:src/03_classes.ts#Store.submit(Order,number) role=param-type
+ref type-ref target="Promise" at=25:49-25:55 conf=HEURISTIC in=tsjs:src/03_classes.ts#Store.submit(Order,number) role=returns
+ref type-ref target="Receipt" at=25:57-25:63 conf=HEURISTIC in=tsjs:src/03_classes.ts#Store.submit(Order,number)
+ref write target="count" at=22:10-22:14 conf=HEURISTIC in=tsjs:src/03_classes.ts#Store.size
+ref write target="items" at=14:10-14:14 conf=HEURISTIC in=tsjs:src/03_classes.ts#Store.constructor(HttpClient,any)
+rel contains tsjs:src/03_classes.ts#Store -> tsjs:src/03_classes.ts#Store.#secret
+rel contains tsjs:src/03_classes.ts#Store -> tsjs:src/03_classes.ts#Store.constructor(HttpClient,any)
+rel contains tsjs:src/03_classes.ts#Store -> tsjs:src/03_classes.ts#Store.count
+rel contains tsjs:src/03_classes.ts#Store -> tsjs:src/03_classes.ts#Store.items
+rel contains tsjs:src/03_classes.ts#Store -> tsjs:src/03_classes.ts#Store.label
+rel contains tsjs:src/03_classes.ts#Store -> tsjs:src/03_classes.ts#Store.refresh()
+rel contains tsjs:src/03_classes.ts#Store -> tsjs:src/03_classes.ts#Store.size
+rel contains tsjs:src/03_classes.ts#Store -> tsjs:src/03_classes.ts#Store.submit(Order,number)
+imp esm "./base" bindings=[Base=Base]
+# diag: keine

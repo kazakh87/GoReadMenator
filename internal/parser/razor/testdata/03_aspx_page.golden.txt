@@ -1,0 +1,16 @@
+file loc=16 filedoc=""
+sym csharp:Shop kind=namespace name=Shop fqn=Shop
+sym csharp:Shop.BasePage kind=class name=BasePage fqn=Shop.BasePage container=csharp:Shop mods=partial sig="partial class BasePage"
+sym csharp:Shop.BasePage.Format(System.Decimal) kind=method name=Format fqn=Shop.BasePage.Format container=csharp:Shop.BasePage mods=private sig="private string Format(decimal value)"
+sym csharp:Shop.BasePage.__Render() kind=method name=__Render fqn=Shop.BasePage.__Render container=csharp:Shop.BasePage mods=private sig="private void __Render()"
+loc csharp:Shop decl 1:11-1:1
+loc csharp:Shop.BasePage partial 1:15-1:1
+loc csharp:Shop.BasePage.Format(System.Decimal) decl 14:20-14:72
+loc csharp:Shop.BasePage.__Render() decl 1:14-1:1
+ref call target="Format" at=9:12-9:17 conf=HEURISTIC in=csharp:Shop.BasePage.__Render() arity=1
+ref call target="ToString" at=14:57-14:64 conf=HEURISTIC in=csharp:Shop.BasePage.Format(System.Decimal) qual=value
+rel contains csharp:Shop -> csharp:Shop.BasePage
+rel contains csharp:Shop.BasePage -> csharp:Shop.BasePage.Format(System.Decimal)
+rel contains csharp:Shop.BasePage -> csharp:Shop.BasePage.__Render()
+imp using "Shop.Models"
+# diag: keine

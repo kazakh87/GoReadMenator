@@ -1,0 +1,23 @@
+file loc=13 filedoc=""
+sym tsjs:src/08_references.ts#Client kind=class name=Client fqn=src/08_references.ts#Client mods=export sig="class Client" doc=inline
+sym tsjs:src/08_references.ts#Client.count kind=property name=count fqn=src/08_references.ts#Client.count container=tsjs:src/08_references.ts#Client doc=inline
+sym tsjs:src/08_references.ts#Client.helper kind=property name=helper fqn=src/08_references.ts#Client.helper container=tsjs:src/08_references.ts#Client mods=private doc=inline
+sym tsjs:src/08_references.ts#Client.run(unknown) kind=method name=run fqn=src/08_references.ts#Client.run container=tsjs:src/08_references.ts#Client sig="run(input: unknown)"
+loc tsjs:src/08_references.ts#Client decl 6:14-17:1
+loc tsjs:src/08_references.ts#Client.count decl 8:3-8:7
+loc tsjs:src/08_references.ts#Client.helper decl 7:11-7:16
+loc tsjs:src/08_references.ts#Client.run(unknown) decl 10:3-16:3
+ref call target="parse" at=11:20-11:24 conf=HEURISTIC in=tsjs:src/08_references.ts#Client.run(unknown) arity=1 qual=util
+ref call target="pick" at=15:12-15:15 conf=HEURISTIC in=tsjs:src/08_references.ts#Client.run(unknown) arity=3
+ref construct target="Helper" at=13:19-13:24 conf=HEURISTIC in=tsjs:src/08_references.ts#Client.run(unknown) arity=2
+ref construct target="Helper" at=7:24-7:29 conf=HEURISTIC in=tsjs:src/08_references.ts#Client.helper
+ref import target="Helper" at=4:10-4:15 conf=EXACT
+ref import target="util" at=3:13-3:16 conf=EXACT
+ref type-ref target="Payload" at=14:24-14:30 conf=HEURISTIC in=tsjs:src/08_references.ts#Client.run(unknown)
+ref write target="count" at=12:10-12:14 conf=HEURISTIC in=tsjs:src/08_references.ts#Client.run(unknown)
+rel contains tsjs:src/08_references.ts#Client -> tsjs:src/08_references.ts#Client.count
+rel contains tsjs:src/08_references.ts#Client -> tsjs:src/08_references.ts#Client.helper
+rel contains tsjs:src/08_references.ts#Client -> tsjs:src/08_references.ts#Client.run(unknown)
+imp esm "./helper" bindings=[Helper=Helper]
+imp namespace "./util" bindings=[util=*]
+# diag: keine

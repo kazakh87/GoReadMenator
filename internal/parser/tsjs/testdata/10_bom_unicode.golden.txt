@@ -1,0 +1,11 @@
+file loc=2 filedoc=""
+sym tsjs:src/10_bom_unicode.ts#Größe kind=interface name=Größe fqn=src/10_bom_unicode.ts#Größe mods=export sig="interface Größe" doc=inline
+sym tsjs:src/10_bom_unicode.ts#Größe.breite kind=property name=breite fqn=src/10_bom_unicode.ts#Größe.breite container=tsjs:src/10_bom_unicode.ts#Größe sig="breite: number" doc=inline
+sym tsjs:src/10_bom_unicode.ts#fläche(Größe) kind=function name=fläche fqn=src/10_bom_unicode.ts#fläche mods=export sig="export fläche(g: Größe): number"
+loc tsjs:src/10_bom_unicode.ts#Größe decl 3:18-3:43
+loc tsjs:src/10_bom_unicode.ts#Größe.breite decl 3:28-3:41
+loc tsjs:src/10_bom_unicode.ts#fläche(Größe) decl 4:17-4:64
+ref type-ref target="Größe" at=4:28-4:34 conf=HEURISTIC in=tsjs:src/10_bom_unicode.ts#fläche(Größe) role=param-type
+rel contains tsjs:src/10_bom_unicode.ts#Größe -> tsjs:src/10_bom_unicode.ts#Größe.breite
+# imp: keine
+# diag: keine

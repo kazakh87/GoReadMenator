@@ -1,0 +1,2 @@
+SZENARIO: Namensauflösung über die Scope-Kette: Member der eigenen Klasse, verschachtelte Typen und Typen im selben Namensraum
+ABDECKUNG: EXACT über Scope, Member des Containers, verschachtelter Typ, Typ im gleichen Namensraum, Aufruf auf Member

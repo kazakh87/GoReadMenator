@@ -1,0 +1,65 @@
+file loc=15 filedoc=""
+sym csharp:Shop kind=namespace name=Shop fqn=Shop
+sym csharp:Shop.Coord kind=record name=Coord fqn=Shop.Coord container=csharp:Shop mods=public sig="public record Coord"
+sym csharp:Shop.Entity kind=class name=Entity fqn=Shop.Entity container=csharp:Shop mods=public,abstract sig="public abstract class Entity"
+sym csharp:Shop.IRepository`1 kind=interface name=IRepository fqn=Shop.IRepository`1 container=csharp:Shop mods=public sig="public interface IRepository`1"
+sym csharp:Shop.Money kind=class name=Money fqn=Shop.Money container=csharp:Shop mods=internal,sealed sig="internal sealed class Money"
+sym csharp:Shop.Order kind=record name=Order fqn=Shop.Order container=csharp:Shop mods=public sig="public record Order"
+sym csharp:Shop.Outer kind=class name=Outer fqn=Shop.Outer container=csharp:Shop mods=public sig="public class Outer"
+sym csharp:Shop.Outer.Inner kind=class name=Inner fqn=Shop.Outer.Inner container=csharp:Shop.Outer mods=public sig="public class Inner"
+sym csharp:Shop.Outer.Kind kind=enum name=Kind fqn=Shop.Outer.Kind container=csharp:Shop.Outer mods=public sig="public enum Kind"
+sym csharp:Shop.Outer.Kind.A kind=field name=A fqn=Shop.Outer.Kind.A container=csharp:Shop.Outer.Kind doc=inline
+sym csharp:Shop.Outer.Kind.B kind=field name=B fqn=Shop.Outer.Kind.B container=csharp:Shop.Outer.Kind doc=inline
+sym csharp:Shop.Pair`2 kind=class name=Pair fqn=Shop.Pair`2 container=csharp:Shop mods=public sig="public class Pair`2"
+sym csharp:Shop.Point kind=struct name=Point fqn=Shop.Point container=csharp:Shop mods=public sig="public struct Point"
+sym csharp:Shop.Point.X kind=field name=X fqn=Shop.Point.X container=csharp:Shop.Point mods=public
+sym csharp:Shop.Point.Y kind=field name=Y fqn=Shop.Point.Y container=csharp:Shop.Point mods=public
+sym csharp:Shop.Status kind=enum name=Status fqn=Shop.Status container=csharp:Shop mods=public sig="public enum Status"
+sym csharp:Shop.Status.Archived kind=field name=Archived fqn=Shop.Status.Archived container=csharp:Shop.Status doc=inline
+sym csharp:Shop.Status.Closed kind=field name=Closed fqn=Shop.Status.Closed container=csharp:Shop.Status doc=inline
+sym csharp:Shop.Status.Open kind=field name=Open fqn=Shop.Status.Open container=csharp:Shop.Status doc=inline
+sym csharp:Shop.Strings kind=class name=Strings fqn=Shop.Strings container=csharp:Shop mods=public,static sig="public static class Strings"
+loc csharp:Shop decl 3:11-3:15
+loc csharp:Shop.Coord decl 10:22-10:51
+loc csharp:Shop.Entity decl 5:23-5:32
+loc csharp:Shop.IRepository`1 decl 8:18-8:51
+loc csharp:Shop.Money decl 6:23-6:31
+loc csharp:Shop.Order decl 9:15-9:45
+loc csharp:Shop.Outer decl 14:14-18:1
+loc csharp:Shop.Outer.Inner decl 16:18-16:26
+loc csharp:Shop.Outer.Kind decl 17:17-17:29
+loc csharp:Shop.Outer.Kind.A decl 17:24-17:24
+loc csharp:Shop.Outer.Kind.B decl 17:27-17:27
+loc csharp:Shop.Pair`2 decl 12:14-12:38
+loc csharp:Shop.Point decl 7:15-7:51
+loc csharp:Shop.Point.X decl 7:34-7:35
+loc csharp:Shop.Point.Y decl 7:48-7:49
+loc csharp:Shop.Status decl 11:13-11:49
+loc csharp:Shop.Status.Archived decl 11:40-11:47
+loc csharp:Shop.Status.Closed decl 11:28-11:37
+loc csharp:Shop.Status.Open decl 11:22-11:25
+loc csharp:Shop.Strings decl 13:21-13:31
+# ref: keine
+rel contains csharp:Shop -> csharp:Shop.Coord
+rel contains csharp:Shop -> csharp:Shop.Entity
+rel contains csharp:Shop -> csharp:Shop.IRepository`1
+rel contains csharp:Shop -> csharp:Shop.Money
+rel contains csharp:Shop -> csharp:Shop.Order
+rel contains csharp:Shop -> csharp:Shop.Outer
+rel contains csharp:Shop -> csharp:Shop.Pair`2
+rel contains csharp:Shop -> csharp:Shop.Point
+rel contains csharp:Shop -> csharp:Shop.Status
+rel contains csharp:Shop -> csharp:Shop.Strings
+rel contains csharp:Shop.Outer -> csharp:Shop.Outer.Inner
+rel contains csharp:Shop.Outer -> csharp:Shop.Outer.Kind
+rel contains csharp:Shop.Outer.Kind -> csharp:Shop.Outer.Kind.A
+rel contains csharp:Shop.Outer.Kind -> csharp:Shop.Outer.Kind.B
+rel contains csharp:Shop.Point -> csharp:Shop.Point.X
+rel contains csharp:Shop.Point -> csharp:Shop.Point.Y
+rel contains csharp:Shop.Status -> csharp:Shop.Status.Archived
+rel contains csharp:Shop.Status -> csharp:Shop.Status.Closed
+rel contains csharp:Shop.Status -> csharp:Shop.Status.Open
+# imp: keine
+warn 10:15 primärer Konstruktor (C# 12): die Parameter werden nicht als Symbole erfasst
+warn 10:8 Positionsparameter eines Records (C# 9): die Parameter werden nicht als Symbole erfasst
+warn 9:8 Positionsparameter eines Records (C# 9): die Parameter werden nicht als Symbole erfasst

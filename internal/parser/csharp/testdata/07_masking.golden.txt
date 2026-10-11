@@ -1,0 +1,28 @@
+file loc=12 filedoc=""
+sym csharp:Shop kind=namespace name=Shop fqn=Shop
+sym csharp:Shop.Literals kind=class name=Literals fqn=Shop.Literals container=csharp:Shop mods=public sig="public class Literals"
+sym csharp:Shop.Literals.Run() kind=method name=Run fqn=Shop.Literals.Run container=csharp:Shop.Literals mods=public sig="public void Run()"
+sym csharp:Shop.Literals.a kind=field name=a fqn=Shop.Literals.a container=csharp:Shop.Literals
+sym csharp:Shop.Literals.b kind=field name=b fqn=Shop.Literals.b container=csharp:Shop.Literals
+sym csharp:Shop.Literals.c kind=field name=c fqn=Shop.Literals.c container=csharp:Shop.Literals
+sym csharp:Shop.Literals.d kind=field name=d fqn=Shop.Literals.d container=csharp:Shop.Literals
+sym csharp:Shop.Literals.e kind=field name=e fqn=Shop.Literals.e container=csharp:Shop.Literals
+loc csharp:Shop decl 3:11-3:15
+loc csharp:Shop.Literals decl 7:14-21:1
+loc csharp:Shop.Literals.Run() decl 17:17-17:25
+loc csharp:Shop.Literals.Run() decl 19:17-19:25
+loc csharp:Shop.Literals.a decl 9:12-9:52
+loc csharp:Shop.Literals.b decl 10:12-10:52
+loc csharp:Shop.Literals.c decl 11:12-13:12
+loc csharp:Shop.Literals.d decl 14:10-14:17
+loc csharp:Shop.Literals.e decl 15:12-15:55
+# ref: keine
+rel contains csharp:Shop -> csharp:Shop.Literals
+rel contains csharp:Shop.Literals -> csharp:Shop.Literals.Run()
+rel contains csharp:Shop.Literals -> csharp:Shop.Literals.a
+rel contains csharp:Shop.Literals -> csharp:Shop.Literals.b
+rel contains csharp:Shop.Literals -> csharp:Shop.Literals.c
+rel contains csharp:Shop.Literals -> csharp:Shop.Literals.d
+rel contains csharp:Shop.Literals -> csharp:Shop.Literals.e
+# imp: keine
+# diag: keine

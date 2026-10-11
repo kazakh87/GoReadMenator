@@ -1,0 +1,176 @@
+## find_symbols {"q":"Catalog"}
+{
+  "items": [
+    {
+      "id": "csharp:Shop.Catalog.Catalog",
+      "kind": "class",
+      "fqn": "Shop.Catalog.Catalog",
+      "file": "Shop.cs",
+      "line": 4,
+      "sig": "public class Catalog"
+    },
+    {
+      "id": "csharp:Shop.Catalog.Cache",
+      "kind": "class",
+      "fqn": "Shop.Catalog.Cache",
+      "file": "Shop.cs",
+      "line": 19,
+      "sig": "internal class Cache"
+    },
+    {
+      "id": "csharp:Shop.Catalog.Cache.Find()",
+      "kind": "method",
+      "fqn": "Shop.Catalog.Cache.Find",
+      "file": "Shop.cs",
+      "line": 21,
+      "sig": "public void Find()"
+    },
+    {
+      "id": "csharp:Shop.Catalog.Catalog.Find(System.Int32)",
+      "kind": "method",
+      "fqn": "Shop.Catalog.Catalog.Find",
+      "file": "Shop.cs",
+      "line": 9,
+      "sig": "public Item Find(int number)"
+    },
+    {
+      "id": "csharp:Shop.Catalog.Catalog.Reindex()",
+      "kind": "method",
+      "fqn": "Shop.Catalog.Catalog.Reindex",
+      "file": "Shop.cs",
+      "line": 11,
+      "sig": "internal void Reindex()"
+    },
+    {
+      "id": "csharp:Shop.Catalog.Item",
+      "kind": "class",
+      "fqn": "Shop.Catalog.Item",
+      "file": "Shop.cs",
+      "line": 14,
+      "sig": "public class Item"
+    },
+    {
+      "id": "csharp:Shop.Catalog.Item.Title",
+      "kind": "property",
+      "fqn": "Shop.Catalog.Item.Title",
+      "file": "Shop.cs",
+      "line": 16
+    }
+  ],
+  "total": 7
+}
+
+## find_symbols {"q":"Find","kind":"method"}
+{
+  "items": [
+    {
+      "id": "csharp:Shop.Catalog.Cache.Find()",
+      "kind": "method",
+      "fqn": "Shop.Catalog.Cache.Find",
+      "file": "Shop.cs",
+      "line": 21,
+      "sig": "public void Find()"
+    },
+    {
+      "id": "csharp:Shop.Catalog.Catalog.Find(System.Int32)",
+      "kind": "method",
+      "fqn": "Shop.Catalog.Catalog.Find",
+      "file": "Shop.cs",
+      "line": 9,
+      "sig": "public Item Find(int number)"
+    }
+  ],
+  "total": 2
+}
+
+## get_symbol {"ref":"Shop.Catalog.Catalog.Find"}
+{
+  "id": "csharp:Shop.Catalog.Catalog.Find(System.Int32)",
+  "kind": "method",
+  "fqn": "Shop.Catalog.Catalog.Find",
+  "container": "csharp:Shop.Catalog.Catalog",
+  "sig": "public Item Find(int number)",
+  "summary": "Liefert den Artikel zur Nummer.",
+  "returns": "Der Artikel oder null.",
+  "params": [
+    {
+      "name": "number",
+      "text": "Die Artikelnummer."
+    }
+  ],
+  "locations": [
+    {
+      "file": "Shop.cs",
+      "start": 9,
+      "end": 9,
+      "role": "decl"
+    }
+  ],
+  "relations": {
+    "contains": 1,
+    "returns": 1
+  },
+  "docSource": "inline"
+}
+
+## get_symbol {"ref":"Find"}
+FEHLER: mehrdeutig: "Find", bitte per ID wählen: csharp:Shop.Catalog.Cache.Find(), csharp:Shop.Catalog.Catalog.Find(System.Int32)
+
+## get_symbol {"ref":"csharp:Shop.Catalog.Item"}
+{
+  "id": "csharp:Shop.Catalog.Item",
+  "kind": "class",
+  "fqn": "Shop.Catalog.Item",
+  "container": "csharp:Shop.Catalog",
+  "sig": "public class Item",
+  "locations": [
+    {
+      "file": "Shop.cs",
+      "start": 14,
+      "end": 17,
+      "role": "decl"
+    }
+  ],
+  "relations": {
+    "contains": 2,
+    "returns": 1
+  }
+}
+
+## api {"scope":"Shop.Catalog."}
+{
+  "items": [
+    {
+      "kind": "class",
+      "fqn": "Shop.Catalog.Catalog",
+      "sig": "public class Catalog",
+      "doc": "Verwaltet Artikel im Katalog."
+    },
+    {
+      "kind": "method",
+      "fqn": "Shop.Catalog.Catalog.Find",
+      "sig": "public Item Find(int number)",
+      "doc": "Liefert den Artikel zur Nummer."
+    },
+    {
+      "kind": "class",
+      "fqn": "Shop.Catalog.Item",
+      "sig": "public class Item"
+    },
+    {
+      "kind": "property",
+      "fqn": "Shop.Catalog.Item.Title"
+    }
+  ],
+  "total": 4
+}
+
+## status {}
+{
+  "head": "<SHA>",
+  "indexedCommit": "<SHA>",
+  "upToDate": true,
+  "symbols": 8,
+  "references": 1
+}
+

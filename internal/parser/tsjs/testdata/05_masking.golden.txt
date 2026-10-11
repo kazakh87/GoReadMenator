@@ -1,0 +1,18 @@
+file loc=6 filedoc=""
+sym tsjs:src/05_masking.ts#div kind=variable name=div fqn=src/05_masking.ts#div doc=inline
+sym tsjs:src/05_masking.ts#re kind=variable name=re fqn=src/05_masking.ts#re doc=inline
+sym tsjs:src/05_masking.ts#real() kind=function name=real fqn=src/05_masking.ts#real mods=export sig="export real()"
+sym tsjs:src/05_masking.ts#s1 kind=variable name=s1 fqn=src/05_masking.ts#s1 doc=inline
+sym tsjs:src/05_masking.ts#s2 kind=variable name=s2 fqn=src/05_masking.ts#s2 doc=inline
+sym tsjs:src/05_masking.ts#t1 kind=variable name=t1 fqn=src/05_masking.ts#t1 doc=inline
+loc tsjs:src/05_masking.ts#div decl 9:7-9:22
+loc tsjs:src/05_masking.ts#re decl 8:7-8:10
+loc tsjs:src/05_masking.ts#real() decl 10:17-10:25
+loc tsjs:src/05_masking.ts#s1 decl 5:7-5:39
+loc tsjs:src/05_masking.ts#s2 decl 6:7-6:32
+loc tsjs:src/05_masking.ts#t1 decl 7:7-7:82
+ref call target="deepCall" at=7:70-7:77 conf=HEURISTIC in=tsjs:src/05_masking.ts#t1
+ref call target="realCall" at=7:41-7:48 conf=HEURISTIC in=tsjs:src/05_masking.ts#t1 arity=1
+# rel: keine
+# imp: keine
+# diag: keine
